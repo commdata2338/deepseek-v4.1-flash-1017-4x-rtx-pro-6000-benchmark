@@ -58,6 +58,9 @@ SINGLE = [
     (f"{KK}/server-log-facts-16-slots.json", "kk-results", "server-log-facts-kk16-final-20261017.json"),
     (f"{KK}/server-log-facts-tuning.json", "kk-results", "server-log-facts-kk-tuning-start2-20261017.json"),
     (f"{KK}/window-monitor.csv", "kk-results", "monitor-window-kk-20261017.csv"),
+    # One check of the Engram tables at 20:15 (Appendix A): the command ran in the test session and wrote no file;
+    # this file keeps its command and output from the record of that session (version 1.1)
+    (f"{KK}/engram-residency-check.json", "kk-results", "engram-residency-check-20261017.json"),
     (f"{KK}/batch-schema-check.json", "kk-results", "batch-schema-20261017T200045.json"),
     (f"{KK}/smoke.log", "kk-results", "smoke-20261017.log"),
     (f"{KK}/launcher-config-8-slots.json", "kk-dir", "checks/print-config-2.txt"),

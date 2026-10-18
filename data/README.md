@@ -1,7 +1,7 @@
 # The data of the paper
 
 `scripts/build_data.py` makes each CSV file in this directory from [`../raw/`](../raw/). Do not change a CSV file by
-hand. Change a number by measuring again.
+hand. Change a number only with a new measurement.
 
 The run names are these:
 
@@ -22,12 +22,13 @@ The run names are these:
 | `chat_reuse_ttft.csv` | The conversation test | 5 |
 | `prefix_reuse_check.csv` | The prompt-reuse check | 5 |
 | `cold_burst.csv` | Four cold requests with a shared prefix | 5 |
-| `server_facts.csv` | The KV cache, the context, and the start time of the Karmic Kraken server, from its start log and its launcher | 6 |
+| `server_facts.csv` | The KV cache, the context, and the start time of the Karmic Kraken server, and the memory check of the Engram tables at its start, from its start log and its launcher | 6, Appendix A |
 | `decode_log_summary.csv` | The accepted draft tokens for each step, from the log of each server | 6 |
 | `quality_pi_tasks.csv`, `quality_pi_summary.csv`, `quality_pi_paired.csv`, `quality_pi_calls.csv` | The quality run through the pi agent | 7, Appendix D |
 | `integrity.csv` | A passphrase in a long prompt | 8 |
 | `batch_schema_check.csv` | Strict JSON schemas and forced tool calls in a batch with long chats | 8 |
 | `more_qualification.csv`, `more_speed.csv`, `chat_reply_under_load.csv`, `api_feature_probes.csv` | The tests of the benchmark procedure for local models | Appendix D |
+| `engram_ram_kk.csv` | The Engram tables in host memory on Karmic Kraken with 8 slots: the reads of the drive with the weights, the resident shared memory of each worker, and the locked memory of the host | Appendix A |
 | `engram_residency.csv` | The resident part of the Engram tables on SGLang, at four points of its test | Appendix F |
 | `single_request_recipe_matrix.csv` | The benchmark of the recipe with one request, on SGLang | Appendix F |
 

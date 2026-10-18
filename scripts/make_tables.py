@@ -318,6 +318,18 @@ def engram():
                  body)
 
 
+def engram_kk():
+    body = []
+    for r in rows("engram_ram_kk.csv"):
+        low, high = r["worker_resident_shared_gib_min"], r["worker_resident_shared_gib_max"]
+        shared = NO_TEST if not r["workers_checked"] else (low if low == high else f"{low} to {high}")
+        body.append([r["start"], r["point_of_the_test"], num(r["seconds"]), num(r["drive_read_mb"], 1),
+                     r["drive_mean_mb_s"], r["drive_highest_5s_mb_s"] or NO_VALUE, shared, r["host_mlocked_gib_highest"]])
+    return table(["Start", "Point of the test", "Seconds", "Read from the drive of the weights, MB", "Mean, MB/s",
+                  "Highest in 5 s, MB/s", "Resident shared memory of each worker (RssShmem), GiB",
+                  "Locked on the host (Mlocked), GiB"], body)
+
+
 def probes():
     body = [[r["engine"], r["probe"], r["http_status"], r["seconds"], r["verdict"]] for r in rows("api_feature_probes.csv")]
     return table(["Engine", "Probe", "HTTP status", "Seconds", "Result"], body)

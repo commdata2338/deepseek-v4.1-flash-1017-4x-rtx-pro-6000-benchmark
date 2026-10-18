@@ -12,6 +12,7 @@ import csv
 import json
 import math
 import re
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -44,6 +45,8 @@ QUALITY = {DS8: RAW / "quality-pi/deepseek-v4.1-flash-1017", DSSG: RAW / "qualit
            GLM8: RAW / "quality-pi/glm-5.3-flash-r38"}
 PAIRS = ((GLM8, DS8), (DSSG, DS8), (GLM8, DSSG))
 MORE = {"Karmic Kraken": KK / "more-tests", "SGLang": SG / "more-tests"}
+WEIGHTS_DRIVE = "nvme1n1"  # the NVMe drive of the test host with the weights, which include the Engram tables
+CDT = timezone(timedelta(hours=-5))  # the local time of the test host on 17 October 2026, as in the window monitor
 
 
 def write(name, header, rows):
@@ -302,6 +305,8 @@ def server_facts():
                 "max_concurrency_at_max_len": r"Maximum concurrency for [\d,]+ tokens per request: ([\d.]+)x",
                 "max_model_len": r"Using max model len (\d+)",
                 "engram_mapped_host_gib": r"Engram mapped-host RAM: ([\d.]+) GiB",
+                "engram_ram_available_gib": r"Engram mapped-host RAM: [\d.]+ GiB packed tables across TP\d+, ([\d.]+) GiB",
+                "engram_ram_reserve_gib": r"Engram mapped-host RAM: .* GiB available, (\d+) GiB reserve",
                 "model_weights_gpu_gib": r"Model loading took ([\d.]+) GiB",
                 "engine_init_s": r"init engine \(profile, create kv cache, warmup model\) took ([\d.]+) s"}
     for slots, name, config in (("16", "server-log-facts-16-slots.json", "launcher-config-16-slots.json"),
@@ -317,10 +322,54 @@ def server_facts():
         rows.append([slots, option("--max-num-seqs"), option("--max-num-batched-tokens"),
                      option("--gpu-memory-utilization"), option("--kv-cache-dtype"), values["max_model_len"],
                      values["kv_cache_tokens"], values["max_concurrency_at_max_len"], values["engram_mapped_host_gib"],
-                     values["model_weights_gpu_gib"], values["engine_init_s"]])
+                     values["model_weights_gpu_gib"], values["engine_init_s"], values["engram_ram_available_gib"],
+                     values["engram_ram_reserve_gib"]])
     write("server_facts.csv", ["slots", "max_num_seqs", "max_num_batched_tokens", "gpu_memory_utilization",
                                "kv_cache_dtype", "max_model_len", "kv_cache_tokens", "max_concurrency_at_max_len",
-                               "engram_mapped_host_gib", "model_weights_gpu_gib_per_gpu", "engine_init_s"], rows)
+                               "engram_mapped_host_gib", "model_weights_gpu_gib_per_gpu", "engine_init_s",
+                               "engram_ram_check_available_gib", "engram_ram_check_reserve_gib"], rows)
+
+
+def clock(epoch):
+    return datetime.fromtimestamp(epoch, CDT).strftime("%H:%M:%S")
+
+
+def engram_kk():
+    """Appendix A: the Engram tables in host memory on Karmic Kraken with 8 slots. The reads of the drive with the
+    weights in two qualification runs (samples of 5 s), one check of the resident shared memory of each worker during
+    the long-context test, and the locked memory of the host in the window monitor at the same times."""
+    with open(KK / "window-monitor.csv", newline="") as handle:
+        monitor = [(r["time"], float(r["mlocked_gib"])) for r in csv.DictReader(handle)]
+
+    def mlocked(start, end):  # the highest value of the monitor rows from 5 s before to 5 s after
+        values = [value for t, value in monitor if clock(start - 5) <= t <= clock(end + 5)]
+        return max(values) if values else None
+
+    facts = json.loads((KK / "server-log-facts-8-slots.json").read_text())
+    budget = re.search(r"Engram mapped-host RAM: ([\d.]+) GiB packed tables across TP(\d+)",
+                       "\n".join(facts["start_milestones"]))
+    tables, ranks = float(budget.group(1)), int(budget.group(2))   # each rank has the same padded share
+    rows = []
+    for folder, label in (("qualification-integrity", "qualification, integrity (Appendix D)"),
+                          ("qualification-speed", "qualification, speed (Appendix D)")):
+        samples = [(r["time"], r["nvme"][WEIGHTS_DRIVE]["sectors_read"])
+                   for r in lines(KK / "more-tests" / folder / "resources.jsonl") if WEIGHTS_DRIVE in r.get("nvme", {})]
+        (first, start_sectors), (last, end_sectors) = samples[0], samples[-1]
+        rates = [(b - a) * 512 / 1e6 / (u - t) for (t, a), (u, b) in zip(samples, samples[1:]) if u > t]
+        read_mb = (end_sectors - start_sectors) * 512 / 1e6
+        rows.append([clock(first), label, round(last - first, 1), WEIGHTS_DRIVE, round(read_mb, 1),
+                     round(read_mb / (last - first), 3), round(max(rates), 3), None, None, None, tables,
+                     round(tables / ranks, 2), mlocked(first, last)])
+    check = json.loads((KK / "engram-residency-check.json").read_text())
+    read = re.search(r"(\w+) read ([\d.]+) MB/s over ([\d.]+) s", check["output"])
+    shared = [float(x) for x in re.findall(r"RssShmem ([\d.]+) GiB", check["output"])]
+    rows.append([clock(check["started_epoch"]), "long-context test, top_p 0.95 and top_k 20, 8 slots",
+                 float(read.group(3)), read.group(1), None, float(read.group(2)), None, len(shared), min(shared),
+                 max(shared), tables, round(tables / ranks, 2), mlocked(check["started_epoch"], check["finished_epoch"])])
+    write("engram_ram_kk.csv", ["start", "point_of_the_test", "seconds", "drive", "drive_read_mb", "drive_mean_mb_s",
+                                "drive_highest_5s_mb_s", "workers_checked", "worker_resident_shared_gib_min",
+                                "worker_resident_shared_gib_max", "tables_gib", "tables_share_each_worker_gib",
+                                "host_mlocked_gib_highest"], rows)
 
 
 def main():
@@ -330,6 +379,7 @@ def main():
     quality()
     more_tests()
     server_facts()
+    engram_kk()
 
 
 if __name__ == "__main__":

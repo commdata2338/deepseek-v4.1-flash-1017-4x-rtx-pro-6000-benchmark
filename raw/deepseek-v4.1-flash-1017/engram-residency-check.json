@@ -1,0 +1,9 @@
+{
+ "what": "One check of the Engram tables in host memory during decode on Karmic Kraken with 8 slots: the reads of the drive with the weights over 10 s (/proc/diskstats), the resident shared memory of each worker process (RssShmem in /proc/PID/status), and the power and use of each GPU. The command ran one time in the test session and wrote no file. This file keeps the command and its output as the session recorded them.",
+ "started_at": "2026-10-17T20:15:24.907-05:00",
+ "started_epoch": 1792286124.907,
+ "finished_at": "2026-10-17T20:15:35.179-05:00",
+ "finished_epoch": 1792286135.179,
+ "command": "r1=$(awk '$3==\"nvme1n1\" {print $6}' /proc/diskstats); t1=$(date +%s.%N); timeout 15 sleep 10; r2=$(awk '$3==\"nvme1n1\" {print $6}' /proc/diskstats); t2=$(date +%s.%N); python3 -B -I -c 'import sys; r1,r2,t1,t2=map(float,sys.argv[1:]); print(f\"nvme1n1 read {(r2-r1)*512/1e6/(t2-t1):.2f} MB/s over {t2-t1:.1f} s\")' \"$r1\" \"$r2\" \"$t1\" \"$t2\"; for p in $(docker top <container> -eo pid,comm | awk '/Worker_TP/ {print $1}'); do awk -v p=$p '/RssShmem/ {printf \"worker %s RssShmem %.2f GiB\\n\", p, $2/1048576}' /proc/$p/status; done; nvidia-smi --query-gpu=index,power.draw,utilization.gpu --format=csv,noheader | tr '\\n' ' '",
+ "output": "nvme1n1 read 0.01 MB/s over 10.0 s\nworker 3503703 RssShmem 47.49 GiB\nworker 3503704 RssShmem 47.49 GiB\nworker 3503705 RssShmem 47.49 GiB\nworker 3503706 RssShmem 47.49 GiB\n0, 237.51 W, 100 % 1, 250.37 W, 100 % 2, 245.69 W, 100 % 3, 236.33 W, 100 %"
+}

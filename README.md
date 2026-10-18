@@ -1,6 +1,6 @@
 # DeepSeek-V4.1-Flash-1017 on four RTX PRO 6000 Blackwell GPUs: tests against GLM-5.3-Flash
 
-Authors: [commdata2338](https://github.com/commdata2338) and [Claude Opus 5.5](https://www.anthropic.com/claude), an AI model of Anthropic. Version 1.0, 17 October 2026.
+Authors: [commdata2338](https://github.com/commdata2338) and [Claude Opus 5.5](https://www.anthropic.com/claude), an AI model of Anthropic. Version 1.1, 18 October 2026.
 
 Each result is from one run on one host, unless the text gives a different number of runs. Tell us if you find an
 error.
@@ -18,6 +18,15 @@ branches [`dev/jovian-judgement`](https://github.com/local-inference-lab/vllm/tr
 [`dev/karmic-kraken`](https://github.com/local-inference-lab/vllm/tree/dev/karmic-kraken). Thus a part of each
 difference in this paper can come from the engine and not from the model. We will do the tests of GLM-5.3-Flash again
 on Karmic Kraken, and we will add the results to this paper.
+
+**Update of 18 October 2026 (version 1.1).** This version adds a check of the Engram tables in the host memory of
+Karmic Kraken, after a question from a reader. No other result changed.
+
+- Appendix A has the check and a new table. All of the tables stayed in page-locked host memory, and the drive with
+  the weights read at most 0.179 MB/s in 5 s.
+- Section 6 and Appendix F refer to the check.
+- The new values are in `data/engram_ram_kk.csv`. They come from
+  `raw/deepseek-v4.1-flash-1017/engram-residency-check.json` and from the samples of two qualification runs.
 
 ## Credits
 
@@ -364,7 +373,8 @@ The engine gives the KV cache the GPU memory that the weights and the CUDA graph
 | 8 | 4096 | 0.93 | fp8 | 1,048,576 | 8,560,931 | 8.16 | 188.83 | 74.29 | 175 |
 
 - The context of each request can be 1,048,576 tokens, the context of the model.
-- The Engram tables use 188.83 GiB of host memory. The GPUs read the rows from that memory.
+- The Engram tables use 188.83 GiB of host memory. The GPUs read the rows from that memory. Appendix A shows that
+  all of the tables stayed in that memory.
 
 The log of the server gives the draft tokens that the model accepted, every 10 s, over all tests of each
 configuration. One step makes the accepted draft tokens and one token of the model:
@@ -517,6 +527,35 @@ tuning, the anonymous memory of the host increased from 53 GiB to 97 GiB, and it
 engine start took 175 s. The configuration with 16 slots tuned only its new shapes: the engine start took 277 s. A
 stop of the server before the first save of a tuning step loses the measurements of that step, but not the compiled
 kernels. Our first start stopped in this way, because the memory limit of its container was too low.
+
+**The Engram tables stayed in host memory.** In RAM mode, each GPU rank keeps its share of the tables in page-locked
+host memory (`cudaHostAlloc`, in the class `MappedHostAllocation` of B12X in the image). Its GPU reads that memory
+directly. At the start, the server copies the rows from the files of the weights into this memory one time. It does
+not keep the files mapped, and the Linux kernel cannot page out page-locked memory. Before the server loads the
+model, it compares the size of the tables and a reserve of 4 GiB with the available memory. The server uses the
+smaller of two values: the available memory of the host, and the container limit minus the memory of the container.
+The log gave 263.56 GiB available at the start with 8 slots and 263.73 GiB with 16 slots, for 188.83 GiB of tables.
+If the tables do not fit, the server does not start. It does not use the disk in their place. We did these checks
+with 8 slots:
+
+<!-- table: engram_kk -->
+| Start | Point of the test | Seconds | Read from the drive of the weights, MB | Mean, MB/s | Highest in 5 s, MB/s | Resident shared memory of each worker (RssShmem), GiB | Locked on the host (Mlocked), GiB |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 20:00:14 | qualification, integrity (Appendix D) | 15 | 0.1 | 0.009 | 0.022 | no test | 1.8 |
+| 20:02:24 | qualification, speed (Appendix D) | 295 | 8.4 | 0.029 | 0.179 | no test | 1.8 |
+| 20:15:24 | long-context test, top_p 0.95 and top_k 20, 8 slots | 10 | no value | 0.01 | no value | 47.49 | 1.8 |
+
+- In the check of 10 s during the long-context test, each of the four workers had 47.49 GiB of resident shared
+  memory. The share of the tables for each worker is 47.21 GiB.
+- The drive with the weights (`nvme1n1` in the raw files) read 0.01 MB/s during that check. In the 295 s of the speed
+  qualification, it read 8.4 MB. On SGLang, the four processes read approximately 50 to 60 MB/s during decode
+  (Appendix F).
+- The locked memory of the host (Mlocked) was 1.8 GiB in these checks. The CUDA driver locks the pages of the
+  tables, but this value does not include them. Thus the column "Locked on the host" of Appendix F does not apply to
+  Karmic Kraken.
+- We did the check of the resident memory one time. The server with 16 slots used the same code, but we did not do
+  these checks on it. `raw/deepseek-v4.1-flash-1017/engram-residency-check.json` keeps the command and the output of
+  the check, from the record of the test session.
 
 The host is the host of the GLM paper:
 
@@ -839,6 +878,8 @@ disk:
 | 16:34:22 | soak-end | 189.1 | 163.0 | 86.2% | 174.9 |
 | 16:35:31 | after-file-read | 189.1 | 162.9 | 86.1% | 175.1 |
 | 17:34:03 | window-end | 189.1 | 165.5 | 87.5% | 189.6 |
+
+On Karmic Kraken, all of the tables stayed in memory (Appendix A).
 
 **One request at a time on SGLang.** The benchmark script of the recipe (`benchmarks/matrix.py`) with one request,
 8,192 output tokens, and prompts of 512, 8,192, and 65,536 tokens:
