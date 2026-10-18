@@ -1,0 +1,77 @@
+{
+  "started_at": 1792285214.5308504,
+  "development_only": true,
+  "features_only": false,
+  "checks": [
+    {
+      "name": "integrity-100",
+      "status": "passed",
+      "seconds": 0.2937184920301661,
+      "result": {
+        "target_tokens": 100,
+        "actual_tokens": 101,
+        "planted": "F3A618C802FDC4BB",
+        "position": 0.15
+      }
+    },
+    {
+      "name": "integrity-2000",
+      "status": "passed",
+      "seconds": 0.2811938909580931,
+      "result": {
+        "target_tokens": 2000,
+        "actual_tokens": 2001,
+        "planted": "F05C85A0DAD52431",
+        "position": 0.35
+      }
+    },
+    {
+      "name": "integrity-30000",
+      "status": "passed",
+      "seconds": 2.145083506940864,
+      "result": {
+        "target_tokens": 30000,
+        "actual_tokens": 29980,
+        "planted": "FFD81EFD40C42467",
+        "position": 0.65
+      }
+    },
+    {
+      "name": "integrity-200000",
+      "status": "passed",
+      "seconds": 15.118575694039464,
+      "result": {
+        "target_tokens": 200000,
+        "actual_tokens": 199988,
+        "planted": "FED156356365B45A",
+        "position": 0.85
+      }
+    }
+  ],
+  "skipped": [],
+  "speed": [],
+  "scope": {
+    "dry_run": false,
+    "base_url": "http://127.0.0.1:8010",
+    "model": "deepseek-v4.1-flash",
+    "key_file": "<serving-dir>/state/api-key",
+    "dspark_off_url": null,
+    "off_key_file": null,
+    "soak_minutes": 0,
+    "timeout": 2400,
+    "output_tokens": 1024,
+    "results": "<results-dir>",
+    "features_only": false,
+    "part": "integrity",
+    "sizes": "",
+    "concurrency": "1,2,4,8"
+  },
+  "kk-ds41-1017.service_sha256": "66e7d0f0849fe7db9b0a3daaadb7d76a673331c36d2283d1e0014f54f1aeb149",
+  "checks/print-config-2.txt_sha256": "5bc36b4d79f362d44b93ef64040437a87bf4a7ba9b18bbd20a8c2a0cea6b2ae3",
+  "observed_dspark_mode": "on",
+  "soak_iterations": 0,
+  "part": "integrity",
+  "failed_checks": [],
+  "status": "passed",
+  "finished_at": 1792285232.4130049
+}

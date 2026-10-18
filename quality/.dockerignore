@@ -1,0 +1,8 @@
+*
+!Dockerfile.agent
+!Dockerfile.grader
+!agent_entry.py
+!pi-config
+!pi-config/**
+!export_tasks.py
+!grade_inner.py

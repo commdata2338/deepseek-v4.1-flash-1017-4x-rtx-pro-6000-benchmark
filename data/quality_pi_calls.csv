@@ -1,0 +1,4 @@
+run,engine,configuration,model_calls,median_call_s,mean_call_s,p90_call_s,sum_of_call_s,run_minutes
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",2320,1.02,5.11,5.09,11848,33.8
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",2310,1.15,4.2,6.21,9692,38.0
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",2357,0.84,3.32,3.48,7834,28.1

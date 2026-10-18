@@ -1,0 +1,4 @@
+no key: HTTP 401 (key enforced)
+models: [('deepseek-v4.1-flash', 1048576)]
+thinking off: content='42' reasoning_chars=0 completion_tokens=2 0.27s finish=stop
+thinking on (low): content='42' reasoning_chars=54 completion_tokens=20 1.00s finish=stop

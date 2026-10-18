@@ -1,0 +1,690 @@
+{
+  "schema_version": 1,
+  "status": "implemented",
+  "qualification": "CPU configuration tests only; no GPU performance claim",
+  "profile": "ds41-flash",
+  "hardware": "rtx-pro-6000-pcie",
+  "argv": [
+    "/opt/venv/bin/python",
+    "-m",
+    "vllm.entrypoints.cli.main",
+    "serve",
+    "/models/DeepSeek-V4.1-Flash-1017",
+    "--async-scheduling",
+    "--attention-backend",
+    "B12X",
+    "--block-size",
+    "256",
+    "--compilation-config",
+    "{\"cudagraph_mode\":\"FULL_AND_PIECEWISE\"}",
+    "--decode-context-parallel-size",
+    "1",
+    "--decode-refill-target",
+    "auto",
+    "--default-chat-template-kwargs",
+    "{\"thinking\":true,\"reasoning_effort\":\"high\"}",
+    "--dtype",
+    "bfloat16",
+    "--enable-auto-tool-choice",
+    "--enable-chunked-prefill",
+    "--enable-force-include-usage",
+    "--enable-prefix-caching",
+    "--enable-prompt-tokens-details",
+    "--enable-request-id-headers",
+    "--engram-config",
+    "{\"cpu_offload\":false,\"table_memory\":\"ram\",\"disk_resident_scales\":false,\"projection_tp\":false}",
+    "--generation-config",
+    "vllm",
+    "--gpu-memory-utilization",
+    "0.93",
+    "--host",
+    "0.0.0.0",
+    "--jit-monitor-mode",
+    "warn",
+    "--kv-cache-dtype",
+    "fp8",
+    "--linear-backend",
+    "b12x",
+    "--load-format",
+    "instanttensor",
+    "--max-cudagraph-capture-size",
+    "128",
+    "--max-model-len",
+    "-1",
+    "--max-num-batched-tokens",
+    "4096",
+    "--max-num-seqs",
+    "16",
+    "--max-parallel-prefills",
+    "1",
+    "--moe-backend",
+    "b12x",
+    "--override-generation-config",
+    "{\"temperature\":1.0,\"top_p\":1.0}",
+    "--pipeline-parallel-size",
+    "1",
+    "--port",
+    "8000",
+    "--prefill-compute-share",
+    "0.4",
+    "--prefill-policy",
+    "round-robin",
+    "--prefill-schedule-interval",
+    "1",
+    "--reasoning-parser",
+    "deepseek_v41",
+    "--safetensors-load-strategy",
+    "lazy",
+    "--no-scheduler-reserve-full-isl",
+    "--served-model-name",
+    "deepseek-v4.1-flash",
+    "--speculative-config",
+    "{\"method\":\"dspark\",\"attention_backend\":\"B12X\",\"draft_sample_method\":\"probabilistic\",\"rejection_sample_method\":\"standard\",\"num_speculative_tokens\":7,\"draft_tensor_parallel_size\":4,\"enable_adaptive_verification\":true,\"adaptive_verification_cost_scale\":1.0}",
+    "--swa-block-size",
+    "128",
+    "--tensor-parallel-size",
+    "4",
+    "--tokenizer-mode",
+    "deepseek_v41",
+    "--tool-call-parser",
+    "deepseek_v41"
+  ],
+  "settings": {
+    "cache-transfer-mode": {
+      "value": "engine_driven",
+      "source": "common:single-node-vllm"
+    },
+    "cache-l1-gib": {
+      "value": 24.0,
+      "source": "common:single-node-vllm"
+    },
+    "cache-l1-init-gib": {
+      "value": 2,
+      "source": "common:single-node-vllm"
+    },
+    "cache-l2-gib": {
+      "value": 256.0,
+      "source": "common:single-node-vllm"
+    },
+    "cache-l2-enabled": {
+      "value": false,
+      "source": "common:single-node-vllm"
+    },
+    "cache-l2-odirect": {
+      "value": false,
+      "source": "common:single-node-vllm"
+    },
+    "cache-l2-prune-stale": {
+      "value": false,
+      "source": "common:single-node-vllm"
+    },
+    "cache-l2-checkpoint-writes": {
+      "value": "always",
+      "source": "common:single-node-vllm"
+    },
+    "cache-cpu-workers": {
+      "value": 4,
+      "source": "common:single-node-vllm"
+    },
+    "cache-l2-workers": {
+      "value": 4,
+      "source": "common:single-node-vllm"
+    },
+    "cache-directory": {
+      "value": "/cache/lmcache",
+      "source": "common:single-node-vllm"
+    },
+    "cache-object-tokens": {
+      "value": 4096,
+      "source": "common:single-node-vllm"
+    },
+    "cache-native-gib": {
+      "value": 64.0,
+      "source": "common:single-node-vllm"
+    },
+    "cache-host": {
+      "value": "127.0.0.1",
+      "source": "common:single-node-vllm"
+    },
+    "cache-http-host": {
+      "value": "127.0.0.1",
+      "source": "common:single-node-vllm"
+    },
+    "cache-start-timeout": {
+      "value": 120.0,
+      "source": "common:single-node-vllm"
+    },
+    "cache-prefetch-policy": {
+      "value": "retain",
+      "source": "common:single-node-vllm"
+    },
+    "cache-broker-directory": {
+      "value": "/cache/lmcache-cumem",
+      "source": "common:single-node-vllm"
+    },
+    "cache-load-failure-policy": {
+      "value": "recompute",
+      "source": "common:single-node-vllm"
+    },
+    "host": {
+      "value": "0.0.0.0",
+      "source": "cli"
+    },
+    "port": {
+      "value": 8000,
+      "source": "cli"
+    },
+    "pipeline-parallel-size": {
+      "value": 1,
+      "source": "common:single-node-vllm"
+    },
+    "decode-context-parallel-size": {
+      "value": 1,
+      "source": "common:single-node-vllm"
+    },
+    "dtype": {
+      "value": "bfloat16",
+      "source": "common:single-node-vllm"
+    },
+    "kv-cache-dtype": {
+      "value": "fp8",
+      "source": "common:single-node-vllm"
+    },
+    "load-format": {
+      "value": "instanttensor",
+      "source": "common:single-node-vllm"
+    },
+    "enable-prefix-caching": {
+      "value": true,
+      "source": "common:single-node-vllm"
+    },
+    "enable-prompt-tokens-details": {
+      "value": true,
+      "source": "common:single-node-vllm"
+    },
+    "enable-chunked-prefill": {
+      "value": true,
+      "source": "common:single-node-vllm"
+    },
+    "enable-auto-tool-choice": {
+      "value": true,
+      "source": "common:single-node-vllm"
+    },
+    "cache-mode": {
+      "value": "vram",
+      "source": "cli"
+    },
+    "replicas": {
+      "value": 1,
+      "source": "common:single-node-vllm"
+    },
+    "checkpoint": {
+      "value": "original",
+      "source": "cli"
+    },
+    "model": {
+      "value": "/models/DeepSeek-V4.1-Flash-1017",
+      "source": "cli"
+    },
+    "served-model-name": {
+      "value": "deepseek-v4.1-flash",
+      "source": "cli"
+    },
+    "tensor-parallel-size": {
+      "value": 4,
+      "source": "cli"
+    },
+    "mode": {
+      "value": "dspark",
+      "source": "model:ds41-flash"
+    },
+    "prefill-compute-share": {
+      "value": "0.4",
+      "source": "model:ds41-flash"
+    },
+    "prefill-schedule-interval": {
+      "value": 1,
+      "source": "model:ds41-flash"
+    },
+    "max-parallel-prefills": {
+      "value": 1,
+      "source": "model:ds41-flash"
+    },
+    "max-model-len": {
+      "value": -1,
+      "source": "model:ds41-flash"
+    },
+    "max-num-seqs": {
+      "value": 16,
+      "source": "cli"
+    },
+    "max-num-batched-tokens": {
+      "value": 4096,
+      "source": "model:ds41-flash"
+    },
+    "gpu-memory-utilization": {
+      "value": 0.93,
+      "source": "cli"
+    },
+    "block-size": {
+      "value": 256,
+      "source": "model:ds41-flash"
+    },
+    "swa-block-size": {
+      "value": 128,
+      "source": "model:ds41-flash"
+    },
+    "max-cudagraph-capture-size": {
+      "value": 128,
+      "source": "model:ds41-flash"
+    },
+    "compilation-config": {
+      "value": {
+        "cudagraph_mode": "FULL_AND_PIECEWISE"
+      },
+      "source": "model:ds41-flash"
+    },
+    "attention-backend": {
+      "value": "B12X",
+      "source": "model:ds41-flash"
+    },
+    "moe-backend": {
+      "value": "b12x",
+      "source": "model:ds41-flash"
+    },
+    "linear-backend": {
+      "value": "b12x",
+      "source": "model:ds41-flash"
+    },
+    "async-scheduling": {
+      "value": true,
+      "source": "model:ds41-flash"
+    },
+    "scheduler-reserve-full-isl": {
+      "value": false,
+      "source": "model:ds41-flash"
+    },
+    "prefill-policy": {
+      "value": "round-robin",
+      "source": "model:ds41-flash"
+    },
+    "decode-refill-target": {
+      "value": "auto",
+      "source": "model:ds41-flash"
+    },
+    "generation-config": {
+      "value": "vllm",
+      "source": "model:ds41-flash"
+    },
+    "override-generation-config": {
+      "value": {
+        "temperature": 1.0,
+        "top_p": 1.0
+      },
+      "source": "cli"
+    },
+    "engram-table-memory": {
+      "value": "ram",
+      "source": "cli"
+    },
+    "engram-disk-resident-scales": {
+      "value": false,
+      "source": "model:ds41-flash"
+    },
+    "engram-projection-tp": {
+      "value": false,
+      "source": "model:ds41-flash"
+    },
+    "adaptive-verification": {
+      "value": true,
+      "source": "model:ds41-flash"
+    },
+    "adaptive-verification-cost-scale": {
+      "value": 1.0,
+      "source": "model:ds41-flash"
+    },
+    "safetensors-load-strategy": {
+      "value": "lazy",
+      "source": "model:ds41-flash"
+    },
+    "jit-monitor-mode": {
+      "value": "warn",
+      "source": "model:ds41-flash"
+    },
+    "tokenizer-mode": {
+      "value": "deepseek_v41",
+      "source": "model:ds41-flash"
+    },
+    "reasoning-parser": {
+      "value": "deepseek_v41",
+      "source": "model:ds41-flash"
+    },
+    "tool-call-parser": {
+      "value": "deepseek_v41",
+      "source": "model:ds41-flash"
+    },
+    "enable-force-include-usage": {
+      "value": true,
+      "source": "model:ds41-flash"
+    },
+    "enable-request-id-headers": {
+      "value": true,
+      "source": "model:ds41-flash"
+    },
+    "default-chat-template-kwargs": {
+      "value": {
+        "thinking": true,
+        "reasoning_effort": "high"
+      },
+      "source": "model:ds41-flash"
+    },
+    "speculative-config": {
+      "value": {
+        "method": "dspark",
+        "attention_backend": "B12X",
+        "draft_sample_method": "probabilistic",
+        "rejection_sample_method": "standard",
+        "num_speculative_tokens": 7,
+        "draft_tensor_parallel_size": 4,
+        "enable_adaptive_verification": true,
+        "adaptive_verification_cost_scale": 1.0
+      },
+      "source": "derived:dspark policy and resolved draft settings"
+    },
+    "draft-tokens": {
+      "value": 7,
+      "source": "derived:effective proposal width"
+    },
+    "engram-config": {
+      "value": {
+        "cpu_offload": false,
+        "table_memory": "ram",
+        "disk_resident_scales": false,
+        "projection_tp": false
+      },
+      "source": "derived:Engram table placement, not generic CPU offload"
+    }
+  },
+  "environment": {
+    "B12X_COMPILE_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/b12x/compile",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "B12X_COMPILE_MEMORY_CACHE_SIZE": {
+      "value": "256",
+      "source": "cli:environment"
+    },
+    "B12X_CUTE_COMPILE_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/b12x/cute",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "CUDA_ARCH_LIST": {
+      "value": "7.5 8.0 8.6 9.0 10.0 12.0",
+      "source": "environment"
+    },
+    "CUDA_BINARY_LOADER_THREAD_COUNT": {
+      "value": "8",
+      "source": "environment"
+    },
+    "CUDA_CACHE_PATH": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/cuda",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "CUDA_COMPONENT_LIST": {
+      "value": "crt nvrtc driver-dev culibos-dev cudart cudart-dev nvcc tileiras cupti",
+      "source": "environment"
+    },
+    "CUDA_DEVICE_MAX_CONNECTIONS": {
+      "value": "32",
+      "source": "model:ds41-flash"
+    },
+    "CUDA_DEVICE_ORDER": {
+      "value": "PCI_BUS_ID",
+      "source": "common:single-node-vllm"
+    },
+    "CUDA_DRIVER_VERSION": {
+      "value": "615.65.02",
+      "source": "environment"
+    },
+    "CUDA_HOME": {
+      "value": "/usr/local/cuda",
+      "source": "environment"
+    },
+    "CUDA_MODULE_LOADING": {
+      "value": "LAZY",
+      "source": "environment"
+    },
+    "CUDA_VERSION": {
+      "value": "13.4.1.012",
+      "source": "environment"
+    },
+    "CUPY_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/cupy",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "CUTE_DSL_ARCH": {
+      "value": "sm_120a",
+      "source": "hardware:rtx-pro-6000-pcie"
+    },
+    "CUTE_DSL_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/cute-dsl",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "FLASHINFER_WORKSPACE_BASE": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/flashinfer",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "FLASH_ATTENTION_CUTE_DSL_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/flash-attention-cute-dsl",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "HF_HOME": {
+      "value": "/root/.cache/huggingface",
+      "source": "common:single-node-vllm"
+    },
+    "INSTANTTENSOR_BACKEND": {
+      "value": "BUFFERED",
+      "source": "common:single-node-vllm"
+    },
+    "NCCL_BUFFSIZE": {
+      "value": "2097152",
+      "source": "hardware:rtx-pro-6000-pcie"
+    },
+    "NCCL_IB_DISABLE": {
+      "value": "1",
+      "source": "hardware:rtx-pro-6000-pcie"
+    },
+    "NCCL_MAX_NCHANNELS": {
+      "value": "16",
+      "source": "hardware:rtx-pro-6000-pcie"
+    },
+    "NCCL_MIN_NCHANNELS": {
+      "value": "16",
+      "source": "hardware:rtx-pro-6000-pcie"
+    },
+    "NCCL_NET_PLUGIN": {
+      "value": "spcx",
+      "source": "platform:foundation"
+    },
+    "NCCL_P2P_LEVEL": {
+      "value": "SYS",
+      "source": "hardware:rtx-pro-6000-pcie"
+    },
+    "NCCL_PROTO": {
+      "value": "LL,LL128,Simple",
+      "source": "hardware:rtx-pro-6000-pcie"
+    },
+    "NCCL_VERSION": {
+      "value": "2.30.7+cuda13.3",
+      "source": "environment"
+    },
+    "NUMBA_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/numba",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "OMP_NUM_THREADS": {
+      "value": "8",
+      "source": "model:ds41-flash"
+    },
+    "PYTORCH_CUDA_ALLOC_CONF": {
+      "value": "expandable_segments:True",
+      "source": "common:single-node-vllm"
+    },
+    "SAFETENSORS_FAST_GPU": {
+      "value": "1",
+      "source": "common:single-node-vllm"
+    },
+    "SPARKINFER_COMPILE_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/b12x/compile",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "TILELANG_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/tilelang",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "TORCHINDUCTOR_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/torchinductor",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "TORCHINDUCTOR_CUTLASS_DIR": {
+      "value": "/opt/pytorch/pytorch/third_party/cutlass",
+      "source": "environment"
+    },
+    "TORCHINDUCTOR_LOOP_ORDERING_AFTER_FUSION": {
+      "value": "0",
+      "source": "environment"
+    },
+    "TORCH_CUDA_ARCH_LIST": {
+      "value": "12.0a",
+      "source": "hardware:rtx-pro-6000-pcie"
+    },
+    "TORCH_EXTENSIONS_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/torch-extensions",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "TRITON_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/triton",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "TRITON_CUDACRT_PATH": {
+      "value": "/usr/local/cuda/include",
+      "source": "environment"
+    },
+    "TRITON_CUDART_PATH": {
+      "value": "/usr/local/cuda/include",
+      "source": "environment"
+    },
+    "TRITON_CUOBJDUMP_PATH": {
+      "value": "/usr/local/cuda/bin/cuobjdump",
+      "source": "environment"
+    },
+    "TRITON_CUPTI_INCLUDE_PATH": {
+      "value": "/usr/local/cuda/include",
+      "source": "environment"
+    },
+    "TRITON_CUPTI_LIB_PATH": {
+      "value": "/usr/local/cuda/lib64",
+      "source": "environment"
+    },
+    "TRITON_NVDISASM_PATH": {
+      "value": "/usr/local/cuda/bin/nvdisasm",
+      "source": "environment"
+    },
+    "TRITON_PTXAS_PATH": {
+      "value": "/usr/local/cuda/bin/ptxas",
+      "source": "environment"
+    },
+    "TVM_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/tvm",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "TVM_FFI_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/tvm-ffi",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "VLLM_CACHE_DIR": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/vllm",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "VLLM_CACHE_ROOT": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70/vllm",
+      "source": "derived:runtime-lock and profile identity"
+    },
+    "VLLM_ENABLE_PCIE_ALLREDUCE": {
+      "value": "1",
+      "source": "hardware:rtx-pro-6000-pcie"
+    },
+    "VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS": {
+      "value": "1",
+      "source": "model:ds41-flash"
+    },
+    "VLLM_MULTI_STREAM_GEMM_TOKEN_THRESHOLD": {
+      "value": "1024",
+      "source": "model:ds41-flash"
+    },
+    "VLLM_PCIE_ALLREDUCE_BACKEND": {
+      "value": "b12x",
+      "source": "hardware:rtx-pro-6000-pcie"
+    },
+    "VLLM_PCIE_DMA_MIN_BYTES": {
+      "value": "6MB",
+      "source": "hardware:rtx-pro-6000-pcie/ds41-flash"
+    },
+    "VLLM_PCIE_ONESHOT_ALLREDUCE_MAX_SIZE": {
+      "value": "96KB",
+      "source": "hardware:rtx-pro-6000-pcie/ds41-flash"
+    },
+    "VLLM_PCIE_ONESHOT_FUSED_ADD_RMS_NORM_MAX_SIZE": {
+      "value": "96KB",
+      "source": "hardware:rtx-pro-6000-pcie/ds41-flash"
+    },
+    "VLLM_PCIE_TWOSHOT_ALLREDUCE_MAX_SIZE": {
+      "value": "off",
+      "source": "hardware:rtx-pro-6000-pcie/ds41-flash"
+    },
+    "VLLM_USE_AOT_COMPILE": {
+      "value": "1",
+      "source": "model:ds41-flash"
+    },
+    "VLLM_USE_BREAKABLE_CUDAGRAPH": {
+      "value": "0",
+      "source": "model:ds41-flash"
+    },
+    "VLLM_USE_FASTOKENS": {
+      "value": "1",
+      "source": "common:single-node-vllm"
+    },
+    "VLLM_USE_FLASHINFER_SAMPLER": {
+      "value": "1",
+      "source": "model:ds41-flash"
+    },
+    "VLLM_USE_MEGA_AOT_ARTIFACT": {
+      "value": "1",
+      "source": "model:ds41-flash"
+    },
+    "VLLM_USE_STANDALONE_COMPILE": {
+      "value": "1",
+      "source": "model:ds41-flash"
+    },
+    "VLLM_USE_V2_MODEL_RUNNER": {
+      "value": "1",
+      "source": "common:single-node-vllm"
+    },
+    "VLLM_WORKER_MULTIPROC_METHOD": {
+      "value": "spawn",
+      "source": "common:single-node-vllm"
+    },
+    "XDG_CACHE_HOME": {
+      "value": "/cache/jit/ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3/ds41-flash-20ab81fe1dfd1b70",
+      "source": "derived:runtime-lock and profile identity"
+    }
+  },
+  "warnings": [
+    "Model parameters preserve recipe intent; changing installed vLLM/B12X requires independent qualification."
+  ],
+  "cache_service": null,
+  "bootstrap": [
+    "/opt/venv/bin/lil-runtime-bootstrap"
+  ],
+  "runtime_lock_sha256": "ac19fe70a2591b7d1fa3d73fc2e88e0ada77bc8230d8d26c115a680c2c3a9ce3"
+}

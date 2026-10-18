@@ -1,0 +1,4 @@
+{"time": "15:57:29", "label": "soak-mid", "tables_gib": 189.1, "resident_gib": 164.3, "mlocked_host_gib": 169.7, "mem_available_gib": 100.9, "resident_share": 0.869}
+{"time": "16:34:22", "label": "soak-end", "tables_gib": 189.1, "resident_gib": 163.0, "mlocked_host_gib": 174.9, "mem_available_gib": 94.2, "resident_share": 0.862}
+{"time": "16:35:31", "label": "after-file-read", "tables_gib": 189.1, "resident_gib": 162.9, "mlocked_host_gib": 175.1, "mem_available_gib": 93.3, "resident_share": 0.861}
+{"time": "17:34:03", "label": "window-end", "tables_gib": 189.1, "resident_gib": 165.5, "mlocked_host_gib": 189.6, "mem_available_gib": 78.7, "resident_share": 0.875}

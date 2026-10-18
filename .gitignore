@@ -1,0 +1,11 @@
+# Per-request detail of the extra tests (Appendixes D and F): the summaries in the same folders are kept.
+raw/**/more-tests/**/*-tokenize-*.json
+raw/**/more-tests/**/*tokenize.json
+raw/**/more-tests/soak-60-minutes/soak-*.json
+raw/**/more-tests/**/speed-*-r[0-9]*.json
+raw/**/more-tests/**/integrity-[0-9]*.json
+# A file that an early test of scripts/build_data.py made on 17 October 2026; the script does not make it now.
+data/engram_residency_sglang.csv
+__pycache__/
+# The working rules of the authors stay local, as in the GLM paper's repository (they name local folders).
+AGENTS.md

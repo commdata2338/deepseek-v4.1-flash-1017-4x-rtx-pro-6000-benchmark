@@ -1,0 +1,22 @@
+{
+  "url": "http://127.0.0.1:8010/v1/models",
+  "request": null,
+  "started_at": 1792268957.456767,
+  "status": 200,
+  "raw_response": "{\"object\":\"list\",\"data\":[{\"id\":\"deepseek-v4.1-flash\",\"object\":\"model\",\"created\":1792268957,\"owned_by\":\"sglang\",\"root\":\"deepseek-v4.1-flash\",\"parent\":null,\"max_model_len\":409600}]}",
+  "response": {
+    "object": "list",
+    "data": [
+      {
+        "id": "deepseek-v4.1-flash",
+        "object": "model",
+        "created": 1792268957,
+        "owned_by": "sglang",
+        "root": "deepseek-v4.1-flash",
+        "parent": null,
+        "max_model_len": 409600
+      }
+    ]
+  },
+  "elapsed_s": 0.012947235954925418
+}

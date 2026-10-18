@@ -1,0 +1,36 @@
+{
+  "input_target": 56000,
+  "input_actual": [
+    55982,
+    55994,
+    55980
+  ],
+  "concurrency": 3,
+  "effective_prefill_tps": 7881.926106150156,
+  "median_ttft_s": 14.487092395080253,
+  "shared_decode_s": 12.217762839980423,
+  "aggregate_decode_tps": 409.3220719291694,
+  "median_decode_tps": 137.25917109082525,
+  "status": "measured",
+  "output_tokens": 1700,
+  "garbage_checks": [
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0
+    }
+  ]
+}

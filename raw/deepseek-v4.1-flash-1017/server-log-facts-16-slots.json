@@ -1,0 +1,1216 @@
+{
+ "unit": "kk-ds41-1017.service",
+ "since": "2026-10-17 21:04:30",
+ "until": "2026-10-17 21:23:30",
+ "spec_lines": 62,
+ "accepted_tokens": 290053,
+ "drafted_tokens": 463594,
+ "accepted_per_drafted": 0.6257,
+ "spec": [
+  {
+   "utc": "10-18 02:12:10",
+   "mean_acceptance_length": 3.14,
+   "mean_verification_depth": 6.43,
+   "max_draft": 7,
+   "accepted_tps": 0.48,
+   "drafted_tps": 1.44,
+   "accepted": 15,
+   "drafted": 45,
+   "per_position": [
+    0.857,
+    0.571,
+    0.429,
+    0.143,
+    0.143,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "utc": "10-18 02:12:20",
+   "mean_acceptance_length": 3.36,
+   "mean_verification_depth": 4.68,
+   "max_draft": 7,
+   "accepted_tps": 26.7,
+   "drafted_tps": 52.89,
+   "accepted": 267,
+   "drafted": 529,
+   "per_position": [
+    0.876,
+    0.708,
+    0.439,
+    0.286,
+    0.177,
+    0.077,
+    0.0
+   ]
+  },
+  {
+   "utc": "10-18 02:12:30",
+   "mean_acceptance_length": 2.91,
+   "mean_verification_depth": 3.68,
+   "max_draft": 7,
+   "accepted_tps": 89.99,
+   "drafted_tps": 173.89,
+   "accepted": 900,
+   "drafted": 1739,
+   "per_position": [
+    0.773,
+    0.568,
+    0.428,
+    0.323,
+    0.241,
+    0.268,
+    0.256
+   ]
+  },
+  {
+   "utc": "10-18 02:12:40",
+   "mean_acceptance_length": 2.97,
+   "mean_verification_depth": 3.58,
+   "max_draft": 7,
+   "accepted_tps": 379.59,
+   "drafted_tps": 689.99,
+   "accepted": 3796,
+   "drafted": 6900,
+   "per_position": [
+    0.781,
+    0.575,
+    0.449,
+    0.385,
+    0.313,
+    0.29,
+    0.303
+   ]
+  },
+  {
+   "utc": "10-18 02:12:50",
+   "mean_acceptance_length": 2.85,
+   "mean_verification_depth": 3.06,
+   "max_draft": 7,
+   "accepted_tps": 435.16,
+   "drafted_tps": 720.53,
+   "accepted": 4352,
+   "drafted": 7206,
+   "per_position": [
+    0.775,
+    0.578,
+    0.492,
+    0.474,
+    0.468,
+    0.453,
+    0.415
+   ]
+  },
+  {
+   "utc": "10-18 02:13:00",
+   "mean_acceptance_length": 3.01,
+   "mean_verification_depth": 3.05,
+   "max_draft": 7,
+   "accepted_tps": 537.74,
+   "drafted_tps": 815.71,
+   "accepted": 5378,
+   "drafted": 8158,
+   "per_position": [
+    0.781,
+    0.62,
+    0.587,
+    0.597,
+    0.597,
+    0.573,
+    0.487
+   ]
+  },
+  {
+   "utc": "10-18 02:13:10",
+   "mean_acceptance_length": 3.02,
+   "mean_verification_depth": 3.35,
+   "max_draft": 7,
+   "accepted_tps": 603.0,
+   "drafted_tps": 999.04,
+   "accepted": 6031,
+   "drafted": 9992,
+   "per_position": [
+    0.78,
+    0.577,
+    0.495,
+    0.474,
+    0.494,
+    0.553,
+    0.537
+   ]
+  },
+  {
+   "utc": "10-18 02:13:20",
+   "mean_acceptance_length": 2.99,
+   "mean_verification_depth": 3.13,
+   "max_draft": 7,
+   "accepted_tps": 740.68,
+   "drafted_tps": 1167.81,
+   "accepted": 7408,
+   "drafted": 11680,
+   "per_position": [
+    0.782,
+    0.59,
+    0.512,
+    0.546,
+    0.601,
+    0.643,
+    0.551
+   ]
+  },
+  {
+   "utc": "10-18 02:13:30",
+   "mean_acceptance_length": 3.02,
+   "mean_verification_depth": 3.38,
+   "max_draft": 7,
+   "accepted_tps": 705.87,
+   "drafted_tps": 1179.79,
+   "accepted": 7060,
+   "drafted": 11800,
+   "per_position": [
+    0.785,
+    0.579,
+    0.505,
+    0.476,
+    0.459,
+    0.469,
+    0.403
+   ]
+  },
+  {
+   "utc": "10-18 02:13:40",
+   "mean_acceptance_length": 3.08,
+   "mean_verification_depth": 3.59,
+   "max_draft": 7,
+   "accepted_tps": 431.76,
+   "drafted_tps": 745.94,
+   "accepted": 4318,
+   "drafted": 7460,
+   "per_position": [
+    0.785,
+    0.584,
+    0.468,
+    0.417,
+    0.444,
+    0.462,
+    0.466
+   ]
+  },
+  {
+   "utc": "10-18 02:13:50",
+   "mean_acceptance_length": 3.15,
+   "mean_verification_depth": 3.83,
+   "max_draft": 7,
+   "accepted_tps": 349.58,
+   "drafted_tps": 622.66,
+   "accepted": 3505,
+   "drafted": 6243,
+   "per_position": [
+    0.804,
+    0.617,
+    0.474,
+    0.39,
+    0.333,
+    0.313,
+    0.333
+   ]
+  },
+  {
+   "utc": "10-18 02:14:00",
+   "mean_acceptance_length": 2.99,
+   "mean_verification_depth": 2.99,
+   "max_draft": 7,
+   "accepted_tps": 552.69,
+   "drafted_tps": 831.98,
+   "accepted": 5527,
+   "drafted": 8320,
+   "per_position": [
+    0.786,
+    0.612,
+    0.565,
+    0.59,
+    0.677,
+    0.687,
+    0.575
+   ]
+  },
+  {
+   "utc": "10-18 02:14:10",
+   "mean_acceptance_length": 3.41,
+   "mean_verification_depth": 3.51,
+   "max_draft": 7,
+   "accepted_tps": 534.69,
+   "drafted_tps": 780.28,
+   "accepted": 5347,
+   "drafted": 7803,
+   "per_position": [
+    0.821,
+    0.679,
+    0.631,
+    0.597,
+    0.598,
+    0.611,
+    0.49
+   ]
+  },
+  {
+   "utc": "10-18 02:14:20",
+   "mean_acceptance_length": 2.96,
+   "mean_verification_depth": 3.33,
+   "max_draft": 7,
+   "accepted_tps": 669.05,
+   "drafted_tps": 1133.45,
+   "accepted": 6692,
+   "drafted": 11337,
+   "per_position": [
+    0.768,
+    0.566,
+    0.46,
+    0.462,
+    0.509,
+    0.586,
+    0.498
+   ]
+  },
+  {
+   "utc": "10-18 02:14:30",
+   "mean_acceptance_length": 3.05,
+   "mean_verification_depth": 3.26,
+   "max_draft": 7,
+   "accepted_tps": 745.68,
+   "drafted_tps": 1184.77,
+   "accepted": 7457,
+   "drafted": 11848,
+   "per_position": [
+    0.781,
+    0.611,
+    0.55,
+    0.521,
+    0.523,
+    0.528,
+    0.448
+   ]
+  },
+  {
+   "utc": "10-18 02:14:40",
+   "mean_acceptance_length": 3.24,
+   "mean_verification_depth": 3.68,
+   "max_draft": 7,
+   "accepted_tps": 731.15,
+   "drafted_tps": 1204.01,
+   "accepted": 7312,
+   "drafted": 12041,
+   "per_position": [
+    0.798,
+    0.618,
+    0.511,
+    0.497,
+    0.477,
+    0.466,
+    0.404
+   ]
+  },
+  {
+   "utc": "10-18 02:14:50",
+   "mean_acceptance_length": 3.0,
+   "mean_verification_depth": 3.52,
+   "max_draft": 7,
+   "accepted_tps": 336.37,
+   "drafted_tps": 592.24,
+   "accepted": 3364,
+   "drafted": 5923,
+   "per_position": [
+    0.758,
+    0.573,
+    0.449,
+    0.413,
+    0.429,
+    0.512,
+    0.537
+   ]
+  },
+  {
+   "utc": "10-18 02:15:00",
+   "mean_acceptance_length": 3.05,
+   "mean_verification_depth": 3.43,
+   "max_draft": 7,
+   "accepted_tps": 408.96,
+   "drafted_tps": 683.63,
+   "accepted": 4090,
+   "drafted": 6837,
+   "per_position": [
+    0.783,
+    0.596,
+    0.513,
+    0.466,
+    0.427,
+    0.469,
+    0.428
+   ]
+  },
+  {
+   "utc": "10-18 02:15:10",
+   "mean_acceptance_length": 2.85,
+   "mean_verification_depth": 2.92,
+   "max_draft": 7,
+   "accepted_tps": 508.87,
+   "drafted_tps": 802.35,
+   "accepted": 5089,
+   "drafted": 8024,
+   "per_position": [
+    0.772,
+    0.592,
+    0.55,
+    0.52,
+    0.514,
+    0.553,
+    0.558
+   ]
+  },
+  {
+   "utc": "10-18 02:15:20",
+   "mean_acceptance_length": 3.0,
+   "mean_verification_depth": 3.22,
+   "max_draft": 7,
+   "accepted_tps": 495.38,
+   "drafted_tps": 797.67,
+   "accepted": 4954,
+   "drafted": 7977,
+   "per_position": [
+    0.789,
+    0.609,
+    0.522,
+    0.501,
+    0.507,
+    0.443,
+    0.342
+   ]
+  },
+  {
+   "utc": "10-18 02:15:30",
+   "mean_acceptance_length": 2.88,
+   "mean_verification_depth": 3.12,
+   "max_draft": 7,
+   "accepted_tps": 718.97,
+   "drafted_tps": 1190.19,
+   "accepted": 7191,
+   "drafted": 11904,
+   "per_position": [
+    0.761,
+    0.565,
+    0.494,
+    0.484,
+    0.531,
+    0.556,
+    0.533
+   ]
+  },
+  {
+   "utc": "10-18 02:15:40",
+   "mean_acceptance_length": 3.12,
+   "mean_verification_depth": 3.35,
+   "max_draft": 7,
+   "accepted_tps": 767.48,
+   "drafted_tps": 1210.22,
+   "accepted": 7676,
+   "drafted": 12104,
+   "per_position": [
+    0.793,
+    0.631,
+    0.561,
+    0.519,
+    0.514,
+    0.487,
+    0.403
+   ]
+  },
+  {
+   "utc": "10-18 02:15:50",
+   "mean_acceptance_length": 3.06,
+   "mean_verification_depth": 3.44,
+   "max_draft": 7,
+   "accepted_tps": 509.8,
+   "drafted_tps": 852.1,
+   "accepted": 5098,
+   "drafted": 8521,
+   "per_position": [
+    0.783,
+    0.595,
+    0.511,
+    0.463,
+    0.44,
+    0.439,
+    0.397
+   ]
+  },
+  {
+   "utc": "10-18 02:16:10",
+   "mean_acceptance_length": 2.87,
+   "mean_verification_depth": 3.61,
+   "max_draft": 7,
+   "accepted_tps": 111.8,
+   "drafted_tps": 215.89,
+   "accepted": 2236,
+   "drafted": 4318,
+   "per_position": [
+    0.753,
+    0.586,
+    0.424,
+    0.331,
+    0.235,
+    0.189,
+    0.125
+   ]
+  },
+  {
+   "utc": "10-18 02:16:20",
+   "mean_acceptance_length": 3.01,
+   "mean_verification_depth": 3.27,
+   "max_draft": 7,
+   "accepted_tps": 616.4,
+   "drafted_tps": 1000.11,
+   "accepted": 6164,
+   "drafted": 10001,
+   "per_position": [
+    0.799,
+    0.65,
+    0.505,
+    0.455,
+    0.414,
+    0.354,
+    0.332
+   ]
+  },
+  {
+   "utc": "10-18 02:16:30",
+   "mean_acceptance_length": 6.29,
+   "mean_verification_depth": 6.5,
+   "max_draft": 7,
+   "accepted_tps": 864.44,
+   "drafted_tps": 1060.93,
+   "accepted": 8645,
+   "drafted": 10610,
+   "per_position": [
+    0.964,
+    0.916,
+    0.873,
+    0.819,
+    0.774,
+    0.703,
+    0.597
+   ]
+  },
+  {
+   "utc": "10-18 02:16:40",
+   "mean_acceptance_length": 6.09,
+   "mean_verification_depth": 6.61,
+   "max_draft": 7,
+   "accepted_tps": 465.21,
+   "drafted_tps": 604.38,
+   "accepted": 4653,
+   "drafted": 6045,
+   "per_position": [
+    0.97,
+    0.949,
+    0.929,
+    0.906,
+    0.89,
+    0.356,
+    0.301
+   ]
+  },
+  {
+   "utc": "10-18 02:16:50",
+   "mean_acceptance_length": 6.1,
+   "mean_verification_depth": 6.85,
+   "max_draft": 7,
+   "accepted_tps": 873.87,
+   "drafted_tps": 1173.95,
+   "accepted": 8739,
+   "drafted": 11740,
+   "per_position": [
+    0.983,
+    0.98,
+    0.963,
+    0.93,
+    0.889,
+    0.221,
+    0.192
+   ]
+  },
+  {
+   "utc": "10-18 02:17:00",
+   "mean_acceptance_length": 5.73,
+   "mean_verification_depth": 6.41,
+   "max_draft": 7,
+   "accepted_tps": 895.35,
+   "drafted_tps": 1214.33,
+   "accepted": 8954,
+   "drafted": 12144,
+   "per_position": [
+    0.946,
+    0.926,
+    0.88,
+    0.842,
+    0.623,
+    0.467,
+    0.325
+   ]
+  },
+  {
+   "utc": "10-18 02:17:10",
+   "mean_acceptance_length": 2.0,
+   "mean_verification_depth": 7.0,
+   "max_draft": 7,
+   "accepted_tps": 0.3,
+   "drafted_tps": 2.1,
+   "accepted": 3,
+   "drafted": 21,
+   "per_position": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "utc": "10-18 02:17:20",
+   "mean_acceptance_length": 2.0,
+   "mean_verification_depth": 7.0,
+   "max_draft": 7,
+   "accepted_tps": 0.1,
+   "drafted_tps": 0.7,
+   "accepted": 1,
+   "drafted": 7,
+   "per_position": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "utc": "10-18 02:17:40",
+   "mean_acceptance_length": 2.0,
+   "mean_verification_depth": 7.0,
+   "max_draft": 7,
+   "accepted_tps": 0.05,
+   "drafted_tps": 0.35,
+   "accepted": 1,
+   "drafted": 7,
+   "per_position": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "utc": "10-18 02:17:50",
+   "mean_acceptance_length": 4.36,
+   "mean_verification_depth": 5.45,
+   "max_draft": 7,
+   "accepted_tps": 213.91,
+   "drafted_tps": 346.82,
+   "accepted": 2139,
+   "drafted": 3468,
+   "per_position": [
+    0.851,
+    0.728,
+    0.61,
+    0.551,
+    0.547,
+    0.391,
+    0.324
+   ]
+  },
+  {
+   "utc": "10-18 02:18:00",
+   "mean_acceptance_length": 4.17,
+   "mean_verification_depth": 4.87,
+   "max_draft": 7,
+   "accepted_tps": 253.64,
+   "drafted_tps": 389.11,
+   "accepted": 2537,
+   "drafted": 3892,
+   "per_position": [
+    0.84,
+    0.719,
+    0.663,
+    0.638,
+    0.62,
+    0.377,
+    0.342
+   ]
+  },
+  {
+   "utc": "10-18 02:18:10",
+   "mean_acceptance_length": 3.11,
+   "mean_verification_depth": 3.51,
+   "max_draft": 7,
+   "accepted_tps": 524.68,
+   "drafted_tps": 871.56,
+   "accepted": 5247,
+   "drafted": 8716,
+   "per_position": [
+    0.771,
+    0.596,
+    0.512,
+    0.504,
+    0.513,
+    0.483,
+    0.409
+   ]
+  },
+  {
+   "utc": "10-18 02:18:20",
+   "mean_acceptance_length": 3.02,
+   "mean_verification_depth": 3.4,
+   "max_draft": 7,
+   "accepted_tps": 401.98,
+   "drafted_tps": 676.7,
+   "accepted": 4021,
+   "drafted": 6769,
+   "per_position": [
+    0.761,
+    0.581,
+    0.511,
+    0.496,
+    0.495,
+    0.452,
+    0.383
+   ]
+  },
+  {
+   "utc": "10-18 02:18:30",
+   "mean_acceptance_length": 2.78,
+   "mean_verification_depth": 4.24,
+   "max_draft": 7,
+   "accepted_tps": 9.1,
+   "drafted_tps": 21.6,
+   "accepted": 91,
+   "drafted": 216,
+   "per_position": [
+    0.843,
+    0.51,
+    0.341,
+    0.188,
+    0.042,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "utc": "10-18 02:18:40",
+   "mean_acceptance_length": 3.15,
+   "mean_verification_depth": 3.76,
+   "max_draft": 7,
+   "accepted_tps": 294.39,
+   "drafted_tps": 515.68,
+   "accepted": 2944,
+   "drafted": 5157,
+   "per_position": [
+    0.801,
+    0.593,
+    0.471,
+    0.412,
+    0.381,
+    0.429,
+    0.398
+   ]
+  },
+  {
+   "utc": "10-18 02:18:50",
+   "mean_acceptance_length": 3.24,
+   "mean_verification_depth": 3.67,
+   "max_draft": 7,
+   "accepted_tps": 372.26,
+   "drafted_tps": 610.33,
+   "accepted": 3723,
+   "drafted": 6104,
+   "per_position": [
+    0.825,
+    0.645,
+    0.529,
+    0.435,
+    0.422,
+    0.442,
+    0.356
+   ]
+  },
+  {
+   "utc": "10-18 02:19:00",
+   "mean_acceptance_length": 2.91,
+   "mean_verification_depth": 2.95,
+   "max_draft": 7,
+   "accepted_tps": 527.0,
+   "drafted_tps": 812.79,
+   "accepted": 5270,
+   "drafted": 8128,
+   "per_position": [
+    0.776,
+    0.587,
+    0.528,
+    0.579,
+    0.687,
+    0.723,
+    0.616
+   ]
+  },
+  {
+   "utc": "10-18 02:19:10",
+   "mean_acceptance_length": 2.97,
+   "mean_verification_depth": 3.13,
+   "max_draft": 7,
+   "accepted_tps": 458.68,
+   "drafted_tps": 727.07,
+   "accepted": 4587,
+   "drafted": 7271,
+   "per_position": [
+    0.794,
+    0.605,
+    0.528,
+    0.52,
+    0.52,
+    0.504,
+    0.426
+   ]
+  },
+  {
+   "utc": "10-18 02:19:20",
+   "mean_acceptance_length": 2.93,
+   "mean_verification_depth": 3.3,
+   "max_draft": 7,
+   "accepted_tps": 630.13,
+   "drafted_tps": 1080.68,
+   "accepted": 6302,
+   "drafted": 10808,
+   "per_position": [
+    0.77,
+    0.564,
+    0.463,
+    0.42,
+    0.463,
+    0.568,
+    0.519
+   ]
+  },
+  {
+   "utc": "10-18 02:19:30",
+   "mean_acceptance_length": 3.08,
+   "mean_verification_depth": 3.44,
+   "max_draft": 7,
+   "accepted_tps": 650.87,
+   "drafted_tps": 1076.16,
+   "accepted": 6509,
+   "drafted": 10762,
+   "per_position": [
+    0.78,
+    0.603,
+    0.513,
+    0.477,
+    0.483,
+    0.508,
+    0.365
+   ]
+  },
+  {
+   "utc": "10-18 02:19:40",
+   "mean_acceptance_length": 2.85,
+   "mean_verification_depth": 3.14,
+   "max_draft": 7,
+   "accepted_tps": 532.23,
+   "drafted_tps": 904.84,
+   "accepted": 5322,
+   "drafted": 9048,
+   "per_position": [
+    0.766,
+    0.565,
+    0.479,
+    0.453,
+    0.438,
+    0.428,
+    0.403
+   ]
+  },
+  {
+   "utc": "10-18 02:19:50",
+   "mean_acceptance_length": 2.93,
+   "mean_verification_depth": 3.13,
+   "max_draft": 7,
+   "accepted_tps": 729.99,
+   "drafted_tps": 1184.62,
+   "accepted": 7301,
+   "drafted": 11848,
+   "per_position": [
+    0.773,
+    0.576,
+    0.507,
+    0.515,
+    0.527,
+    0.545,
+    0.574
+   ]
+  },
+  {
+   "utc": "10-18 02:20:00",
+   "mean_acceptance_length": 3.05,
+   "mean_verification_depth": 3.24,
+   "max_draft": 7,
+   "accepted_tps": 746.64,
+   "drafted_tps": 1179.9,
+   "accepted": 7467,
+   "drafted": 11800,
+   "per_position": [
+    0.784,
+    0.599,
+    0.544,
+    0.519,
+    0.563,
+    0.574,
+    0.531
+   ]
+  },
+  {
+   "utc": "10-18 02:20:10",
+   "mean_acceptance_length": 3.04,
+   "mean_verification_depth": 3.38,
+   "max_draft": 7,
+   "accepted_tps": 499.89,
+   "drafted_tps": 828.99,
+   "accepted": 4999,
+   "drafted": 8290,
+   "per_position": [
+    0.797,
+    0.61,
+    0.492,
+    0.46,
+    0.446,
+    0.449,
+    0.372
+   ]
+  },
+  {
+   "utc": "10-18 02:20:20",
+   "mean_acceptance_length": 3.19,
+   "mean_verification_depth": 3.8,
+   "max_draft": 7,
+   "accepted_tps": 389.66,
+   "drafted_tps": 676.83,
+   "accepted": 3897,
+   "drafted": 6769,
+   "per_position": [
+    0.792,
+    0.593,
+    0.469,
+    0.424,
+    0.436,
+    0.477,
+    0.448
+   ]
+  },
+  {
+   "utc": "10-18 02:20:30",
+   "mean_acceptance_length": 2.87,
+   "mean_verification_depth": 3.05,
+   "max_draft": 7,
+   "accepted_tps": 434.81,
+   "drafted_tps": 709.42,
+   "accepted": 4348,
+   "drafted": 7094,
+   "per_position": [
+    0.771,
+    0.581,
+    0.493,
+    0.488,
+    0.534,
+    0.543,
+    0.51
+   ]
+  },
+  {
+   "utc": "10-18 02:20:40",
+   "mean_acceptance_length": 2.81,
+   "mean_verification_depth": 2.9,
+   "max_draft": 7,
+   "accepted_tps": 498.01,
+   "drafted_tps": 797.45,
+   "accepted": 4981,
+   "drafted": 7976,
+   "per_position": [
+    0.773,
+    0.587,
+    0.516,
+    0.525,
+    0.523,
+    0.475,
+    0.433
+   ]
+  },
+  {
+   "utc": "10-18 02:20:50",
+   "mean_acceptance_length": 2.88,
+   "mean_verification_depth": 3.17,
+   "max_draft": 7,
+   "accepted_tps": 552.44,
+   "drafted_tps": 933.8,
+   "accepted": 5525,
+   "drafted": 9339,
+   "per_position": [
+    0.763,
+    0.57,
+    0.494,
+    0.47,
+    0.459,
+    0.423,
+    0.327
+   ]
+  },
+  {
+   "utc": "10-18 02:21:00",
+   "mean_acceptance_length": 3.06,
+   "mean_verification_depth": 3.24,
+   "max_draft": 7,
+   "accepted_tps": 744.96,
+   "drafted_tps": 1171.14,
+   "accepted": 7450,
+   "drafted": 11712,
+   "per_position": [
+    0.774,
+    0.605,
+    0.557,
+    0.557,
+    0.561,
+    0.56,
+    0.506
+   ]
+  },
+  {
+   "utc": "10-18 02:21:10",
+   "mean_acceptance_length": 3.14,
+   "mean_verification_depth": 3.48,
+   "max_draft": 7,
+   "accepted_tps": 735.02,
+   "drafted_tps": 1197.27,
+   "accepted": 7351,
+   "drafted": 11974,
+   "per_position": [
+    0.787,
+    0.624,
+    0.527,
+    0.486,
+    0.47,
+    0.447,
+    0.462
+   ]
+  },
+  {
+   "utc": "10-18 02:21:20",
+   "mean_acceptance_length": 3.09,
+   "mean_verification_depth": 3.6,
+   "max_draft": 7,
+   "accepted_tps": 299.97,
+   "drafted_tps": 516.35,
+   "accepted": 3000,
+   "drafted": 5164,
+   "per_position": [
+    0.794,
+    0.614,
+    0.489,
+    0.428,
+    0.376,
+    0.344,
+    0.327
+   ]
+  },
+  {
+   "utc": "10-18 02:21:30",
+   "mean_acceptance_length": 3.02,
+   "mean_verification_depth": 3.69,
+   "max_draft": 7,
+   "accepted_tps": 252.52,
+   "drafted_tps": 459.74,
+   "accepted": 2525,
+   "drafted": 4597,
+   "per_position": [
+    0.791,
+    0.594,
+    0.44,
+    0.353,
+    0.34,
+    0.342,
+    0.315
+   ]
+  },
+  {
+   "utc": "10-18 02:21:40",
+   "mean_acceptance_length": 3.2,
+   "mean_verification_depth": 3.78,
+   "max_draft": 7,
+   "accepted_tps": 360.22,
+   "drafted_tps": 618.56,
+   "accepted": 3603,
+   "drafted": 6187,
+   "per_position": [
+    0.812,
+    0.639,
+    0.503,
+    0.415,
+    0.371,
+    0.351,
+    0.264
+   ]
+  },
+  {
+   "utc": "10-18 02:21:50",
+   "mean_acceptance_length": 3.0,
+   "mean_verification_depth": 3.03,
+   "max_draft": 7,
+   "accepted_tps": 526.02,
+   "drafted_tps": 797.63,
+   "accepted": 5260,
+   "drafted": 7976,
+   "per_position": [
+    0.776,
+    0.614,
+    0.59,
+    0.574,
+    0.63,
+    0.632,
+    0.556
+   ]
+  },
+  {
+   "utc": "10-18 02:22:00",
+   "mean_acceptance_length": 3.07,
+   "mean_verification_depth": 3.26,
+   "max_draft": 7,
+   "accepted_tps": 476.37,
+   "drafted_tps": 750.06,
+   "accepted": 4764,
+   "drafted": 7501,
+   "per_position": [
+    0.78,
+    0.621,
+    0.541,
+    0.54,
+    0.552,
+    0.551,
+    0.457
+   ]
+  },
+  {
+   "utc": "10-18 02:22:10",
+   "mean_acceptance_length": 3.74,
+   "mean_verification_depth": 4.25,
+   "max_draft": 7,
+   "accepted_tps": 423.84,
+   "drafted_tps": 657.6,
+   "accepted": 4239,
+   "drafted": 6577,
+   "per_position": [
+    0.822,
+    0.678,
+    0.583,
+    0.559,
+    0.557,
+    0.541,
+    0.435
+   ]
+  },
+  {
+   "utc": "10-18 02:22:20",
+   "mean_acceptance_length": 3.09,
+   "mean_verification_depth": 3.5,
+   "max_draft": 7,
+   "accepted_tps": 355.36,
+   "drafted_tps": 594.43,
+   "accepted": 3554,
+   "drafted": 5945,
+   "per_position": [
+    0.794,
+    0.605,
+    0.499,
+    0.46,
+    0.444,
+    0.481,
+    0.403
+   ]
+  },
+  {
+   "utc": "10-18 02:22:30",
+   "mean_acceptance_length": 3.11,
+   "mean_verification_depth": 3.04,
+   "max_draft": 7,
+   "accepted_tps": 553.13,
+   "drafted_tps": 799.1,
+   "accepted": 5532,
+   "drafted": 7992,
+   "per_position": [
+    0.786,
+    0.639,
+    0.63,
+    0.655,
+    0.724,
+    0.688,
+    0.561
+   ]
+  },
+  {
+   "utc": "10-18 02:22:40",
+   "mean_acceptance_length": 3.31,
+   "mean_verification_depth": 3.62,
+   "max_draft": 7,
+   "accepted_tps": 334.18,
+   "drafted_tps": 522.97,
+   "accepted": 3342,
+   "drafted": 5230,
+   "per_position": [
+    0.819,
+    0.662,
+    0.557,
+    0.504,
+    0.5,
+    0.522,
+    0.44
+   ]
+  }
+ ],
+ "start_milestones": [
+  "(APIServer pid=76) INFO 10-18 02:04:55 [model.py:2061] Using max model len 1048576",
+  "(APIServer pid=76) INFO 10-18 02:04:59 [model.py:2061] Using max model len 1048576",
+  "(APIServer pid=76) INFO 10-18 02:05:01 [engram.py:146] Engram mapped-host RAM: 188.83 GiB packed tables across TP4, 263.73 GiB available, 4 GiB reserve",
+  "(APIServer pid=76) INFO 10-18 02:05:01 [vllm.py:1497] Resolved Engram configuration: EngramConfig(cpu_offload=False, embedding_across_dp=False, dp_shared_memory=False, table_memory='ram', disk_resident_scales=False, projection_tp=False)",
+  "(EngineCore pid=492) INFO 10-18 02:05:11 [core.py:124] Initializing a V1 LLM engine (v0.1.dev21836+g6d66eed35) with config: model='/models/DeepSeek-V4.1-Flash-1017', speculative_config=SpeculativeConfig(method='dspark', model='/models/DeepSeek-V4.1-Flash-1017', num_spec_toke",
+  " pid=528) INFO 10-18 02:05:27 [b12x_pcie_all_reduce.py:326] Using B12X PCIe all-reduce (algorithm=oneshot, one-shot max=98304, fused max=98304, two-shot bf16 max=off, DMA min=6291456).",
+  "er_TP0 pid=528) INFO 10-18 02:06:55 [default_loader.py:575] Loading weights took 57.72 seconds",
+  "(Worker_TP0 pid=528) INFO 10-18 02:06:56 [vllm.py:1497] Resolved Engram configuration: EngramConfig(cpu_offload=False, embedding_across_dp=False, dp_shared_memory=False, table_memory='ram', disk_resident_scales=False, projection_tp=False)",
+  "er_TP0 pid=528) INFO 10-18 02:06:59 [default_loader.py:575] Loading weights took 2.56 seconds",
+  "rker_TP3 pid=531) INFO 10-18 02:07:00 [model_runner.py:456] Model loading took 74.29 GiB memory and 91.966288 seconds",
+  "rker_TP1 pid=529) INFO 10-18 02:07:00 [model_runner.py:456] Model loading took 74.29 GiB memory and 91.970499 seconds",
+  "rker_TP0 pid=528) INFO 10-18 02:07:00 [model_runner.py:456] Model loading took 74.29 GiB memory and 91.978680 seconds",
+  "rker_TP2 pid=530) INFO 10-18 02:07:00 [model_runner.py:456] Model loading took 74.29 GiB memory and 91.990793 seconds",
+  "b12x ready comm.pcie: 2212/2212 ready, candidates 0/1 prepared, 42502 measured, 1290 cached, 7 compilations, 2:40",
+  "Worker_TP0 pid=528) INFO 10-18 02:10:26 [gpu_worker.py:782] Available KV cache memory: 8.33 GiB",
+  "eCore pid=492) INFO 10-18 02:10:26 [kv_cache_utils.py:2850] GPU KV cache size: 8,050,969 tokens, Maximum concurrency for 1,048,576 tokens per request: 7.68x",
+  "b12x ready attention.dsa_indexer: 1112/1112 ready, 90 measured, 209 cached, 0 compilations, 0:11",
+  "b12x ready gemm.block_fp8_linear: 1112/1112 ready, 0 measured, 254 cached, 0 compilations, 0:06",
+  "orker_TP1 pid=529) INFO 10-18 02:11:35 [gpu_worker.py:1006] CUDA graph pool memory: 1.79 GiB (actual), 1.65 GiB (estimated), difference: 0.14 GiB (7.7%).",
+  "orker_TP3 pid=531) INFO 10-18 02:11:35 [gpu_worker.py:1006] CUDA graph pool memory: 1.78 GiB (actual), 1.65 GiB (estimated), difference: 0.12 GiB (6.8%).",
+  "orker_TP2 pid=530) INFO 10-18 02:11:35 [gpu_worker.py:1006] CUDA graph pool memory: 1.76 GiB (actual), 1.67 GiB (estimated), difference: 0.08 GiB (4.6%).",
+  "orker_TP0 pid=528) INFO 10-18 02:11:35 [gpu_worker.py:1006] CUDA graph pool memory: 1.76 GiB (actual), 1.65 GiB (estimated), difference: 0.1 GiB (5.8%).",
+  "(EngineCore pid=492) INFO 10-18 02:11:37 [core.py:390] init engine (profile, create kv cache, warmup model) took 276.62 s",
+  "(EngineCore pid=492) INFO 10-18 02:11:39 [vllm.py:1497] Resolved Engram configuration: EngramConfig(cpu_offload=False, embedding_across_dp=False, dp_shared_memory=False, table_memory='ram', disk_resident_scales=False, projection_tp=False)",
+  "(APIServer pid=76) INFO:     Application startup complete."
+ ]
+}

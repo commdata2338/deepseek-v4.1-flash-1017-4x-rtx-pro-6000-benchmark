@@ -1,0 +1,12 @@
+{"round": 1, "type": "prose", "form": "chat-flags", "decode_tps": 106.8, "completion_tokens": 400, "prompt_tokens": 32, "think_close_at_char": -1}
+{"round": 1, "type": "prose", "form": "raw-off", "decode_tps": 114.0, "completion_tokens": 400, "prompt_tokens": 47, "think_close_at_char": -1}
+{"round": 1, "type": "code", "form": "chat-flags", "decode_tps": 197.4, "completion_tokens": 400, "prompt_tokens": 59, "think_close_at_char": -1}
+{"round": 1, "type": "code", "form": "raw-off", "decode_tps": 200.5, "completion_tokens": 400, "prompt_tokens": 74, "think_close_at_char": -1}
+{"round": 1, "type": "structured", "form": "chat-flags", "decode_tps": 215.6, "completion_tokens": 400, "prompt_tokens": 25, "think_close_at_char": -1}
+{"round": 1, "type": "structured", "form": "raw-off", "decode_tps": 215.6, "completion_tokens": 400, "prompt_tokens": 40, "think_close_at_char": -1}
+{"round": 2, "type": "prose", "form": "chat-flags", "decode_tps": 119.5, "completion_tokens": 400, "prompt_tokens": 32, "think_close_at_char": -1}
+{"round": 2, "type": "prose", "form": "raw-off", "decode_tps": 118.5, "completion_tokens": 400, "prompt_tokens": 47, "think_close_at_char": -1}
+{"round": 2, "type": "code", "form": "chat-flags", "decode_tps": 198.2, "completion_tokens": 400, "prompt_tokens": 59, "think_close_at_char": -1}
+{"round": 2, "type": "code", "form": "raw-off", "decode_tps": 199.3, "completion_tokens": 400, "prompt_tokens": 74, "think_close_at_char": -1}
+{"round": 2, "type": "structured", "form": "chat-flags", "decode_tps": 215.5, "completion_tokens": 400, "prompt_tokens": 25, "think_close_at_char": -1}
+{"round": 2, "type": "structured", "form": "raw-off", "decode_tps": 216.1, "completion_tokens": 400, "prompt_tokens": 40, "think_close_at_char": -1}

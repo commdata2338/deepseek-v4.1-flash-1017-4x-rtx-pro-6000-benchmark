@@ -1,0 +1,6 @@
+{"label": "jovian-r38-8", "context_in": "user message", "step": "first request, 16 tokens", "shared_context_tokens": 56348, "seconds": 5.68, "prompt_tokens": 56386, "completion_tokens": 16, "cached_tokens": null}
+{"label": "jovian-r38-8", "context_in": "user message", "step": "the same request again", "shared_context_tokens": 56348, "seconds": 0.42, "prompt_tokens": 56386, "completion_tokens": 16, "cached_tokens": null}
+{"label": "jovian-r38-8", "context_in": "user message", "step": "same context, other question", "shared_context_tokens": 56348, "seconds": 4.85, "prompt_tokens": 56387, "completion_tokens": 16, "cached_tokens": null}
+{"label": "jovian-r38-8", "context_in": "user message", "step": "the same request, 300 tokens", "shared_context_tokens": 56348, "seconds": 1.14, "prompt_tokens": 56386, "completion_tokens": 300, "cached_tokens": null}
+{"label": "jovian-r38-8", "context_in": "user message", "step": "the same request again, after 300 tokens", "shared_context_tokens": 56348, "seconds": 0.2, "prompt_tokens": 56386, "completion_tokens": 16, "cached_tokens": null}
+{"label": "jovian-r38-8", "context_in": "user message", "step": "same context, third question", "shared_context_tokens": 56348, "seconds": 4.91, "prompt_tokens": 56386, "completion_tokens": 16, "cached_tokens": null}

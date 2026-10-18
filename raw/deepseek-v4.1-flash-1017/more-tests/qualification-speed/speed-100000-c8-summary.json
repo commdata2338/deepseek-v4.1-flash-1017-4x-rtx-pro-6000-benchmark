@@ -1,0 +1,71 @@
+{
+  "input_target": 100000,
+  "input_actual": [
+    99991,
+    99991,
+    99992,
+    99991,
+    99992,
+    99992,
+    99993,
+    99992
+  ],
+  "concurrency": 8,
+  "effective_prefill_tps": 6161.978805899776,
+  "median_ttft_s": 68.35611268901266,
+  "shared_decode_s": 0,
+  "aggregate_decode_tps": null,
+  "median_decode_tps": null,
+  "status": "no_overlap",
+  "output_tokens": 4096,
+  "garbage_checks": [
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.00011807072436389397
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.019616417817204974
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0034653465346534654
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.00018022347711161841
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.04936845904005774
+    }
+  ]
+}

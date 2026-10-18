@@ -1,0 +1,4 @@
+server,slots,source,lines,mean_accept_length,min_accept_length,max_accept_length,accepted_draft_tokens,drafted_tokens
+"DeepSeek-V4.1-Flash-1017, SGLang",8 slots,decode batch lines,1742,4.21,2.38,6.0,,
+"DeepSeek-V4.1-Flash-1017, Karmic Kraken",8 slots,speculative-decoding lines (10 s),304,3.95,1.98,7.71,1101090,1656504
+"DeepSeek-V4.1-Flash-1017, Karmic Kraken",16 slots,speculative-decoding lines (10 s),62,3.23,2.0,6.29,290053,463594

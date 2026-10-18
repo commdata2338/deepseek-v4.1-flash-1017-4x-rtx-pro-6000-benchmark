@@ -1,0 +1,9 @@
+Lines of the server log of this start that name the rule for the recurrent state.
+
+(no line with 'Request-boundary recurrent checkpoint' in the log of this start)
+
+From the 'non-default args' line of this start:
+recurrent_checkpoint_policy: 'aligned'
+prefix_cache_retention_interval: None
+mamba_cache_mode: 'align'
+override_generation_config: {'temperature': 1.0, 'top_p': 1.0}

@@ -1,0 +1,608 @@
+{
+  "started_at": 1792285344.6511488,
+  "development_only": true,
+  "features_only": false,
+  "checks": [
+    {
+      "name": "speed-5000-c1",
+      "status": "passed",
+      "seconds": 10.554234158946201,
+      "result": {
+        "input_target": 5000,
+        "input_actual": [
+          5001
+        ],
+        "concurrency": 1,
+        "effective_prefill_tps": 9524.680013011337,
+        "median_ttft_s": 0.5248755880165845,
+        "shared_decode_s": 9.97530780499801,
+        "aggregate_decode_tps": 410.51364830549375,
+        "median_decode_tps": 410.51364830549375,
+        "status": "measured",
+        "output_tokens": 4096,
+        "garbage_checks": [
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.003280921134084437
+          }
+        ]
+      }
+    },
+    {
+      "name": "speed-5000-c4",
+      "status": "passed",
+      "seconds": 22.5556488300208,
+      "result": {
+        "input_target": 5000,
+        "input_actual": [
+          5001,
+          5001,
+          5001,
+          5001
+        ],
+        "concurrency": 4,
+        "effective_prefill_tps": 9695.924640757348,
+        "median_ttft_s": 1.1177480359910987,
+        "shared_decode_s": 17.71994600701146,
+        "aggregate_decode_tps": 813.2643290390292,
+        "median_decode_tps": 197.9407837141347,
+        "status": "measured",
+        "output_tokens": 4096,
+        "garbage_checks": [
+          {
+            "empty": false,
+            "repeated_block_six_times": true,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.021521653284191127
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0005728470498376934
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": true,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.05727856943280246
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "speed-5000-c8",
+      "status": "passed",
+      "seconds": 34.88853013294283,
+      "result": {
+        "input_target": 5000,
+        "input_actual": [
+          5001,
+          5001,
+          5001,
+          5001,
+          5001,
+          5001,
+          5001,
+          5001
+        ],
+        "concurrency": 8,
+        "effective_prefill_tps": 7460.852137924555,
+        "median_ttft_s": 2.741627164010424,
+        "shared_decode_s": 24.361290939035825,
+        "aggregate_decode_tps": 1149.5696213342126,
+        "median_decode_tps": 145.45616687012256,
+        "status": "measured",
+        "output_tokens": 4096,
+        "garbage_checks": [
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.013652515429212643
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.009325809325809327
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.057259158751696064
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.035733297844024486
+          }
+        ]
+      }
+    },
+    {
+      "name": "speed-100000-c1",
+      "status": "passed",
+      "seconds": 17.4636696689995,
+      "result": {
+        "input_target": 100000,
+        "input_actual": [
+          99993
+        ],
+        "concurrency": 1,
+        "effective_prefill_tps": 14068.608039831937,
+        "median_ttft_s": 7.107349492958747,
+        "shared_decode_s": 10.214636655990034,
+        "aggregate_decode_tps": 400.895316976216,
+        "median_decode_tps": 400.895316976216,
+        "status": "measured",
+        "output_tokens": 4096,
+        "garbage_checks": [
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "speed-100000-c4",
+      "status": "passed",
+      "seconds": 70.55742257507518,
+      "result": {
+        "input_target": 100000,
+        "input_actual": [
+          99991,
+          99992,
+          99980,
+          99990
+        ],
+        "concurrency": 4,
+        "effective_prefill_tps": 6780.504367042841,
+        "median_ttft_s": 32.74248088494642,
+        "shared_decode_s": 0,
+        "aggregate_decode_tps": null,
+        "median_decode_tps": null,
+        "status": "no_overlap",
+        "output_tokens": 4096,
+        "garbage_checks": [
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0037621808313802888
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.003902378592666006
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.06760583835596544
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.038348082595870206
+          }
+        ]
+      }
+    },
+    {
+      "name": "speed-100000-c8",
+      "status": "passed",
+      "seconds": 141.2360790470848,
+      "result": {
+        "input_target": 100000,
+        "input_actual": [
+          99991,
+          99991,
+          99992,
+          99991,
+          99992,
+          99992,
+          99993,
+          99992
+        ],
+        "concurrency": 8,
+        "effective_prefill_tps": 6161.978805899776,
+        "median_ttft_s": 68.35611268901266,
+        "shared_decode_s": 0,
+        "aggregate_decode_tps": null,
+        "median_decode_tps": null,
+        "status": "no_overlap",
+        "output_tokens": 4096,
+        "garbage_checks": [
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.00011807072436389397
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.019616417817204974
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0034653465346534654
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.00018022347711161841
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.0
+          },
+          {
+            "empty": false,
+            "repeated_block_six_times": false,
+            "replacement_character": false,
+            "non_ascii_or_control_fraction": 0.04936845904005774
+          }
+        ]
+      }
+    }
+  ],
+  "skipped": [],
+  "speed": [
+    {
+      "input_target": 5000,
+      "input_actual": [
+        5001
+      ],
+      "concurrency": 1,
+      "effective_prefill_tps": 9524.680013011337,
+      "median_ttft_s": 0.5248755880165845,
+      "shared_decode_s": 9.97530780499801,
+      "aggregate_decode_tps": 410.51364830549375,
+      "median_decode_tps": 410.51364830549375,
+      "status": "measured",
+      "output_tokens": 4096,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.003280921134084437
+        }
+      ]
+    },
+    {
+      "input_target": 5000,
+      "input_actual": [
+        5001,
+        5001,
+        5001,
+        5001
+      ],
+      "concurrency": 4,
+      "effective_prefill_tps": 9695.924640757348,
+      "median_ttft_s": 1.1177480359910987,
+      "shared_decode_s": 17.71994600701146,
+      "aggregate_decode_tps": 813.2643290390292,
+      "median_decode_tps": 197.9407837141347,
+      "status": "measured",
+      "output_tokens": 4096,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": true,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.021521653284191127
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0005728470498376934
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": true,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.05727856943280246
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "input_target": 5000,
+      "input_actual": [
+        5001,
+        5001,
+        5001,
+        5001,
+        5001,
+        5001,
+        5001,
+        5001
+      ],
+      "concurrency": 8,
+      "effective_prefill_tps": 7460.852137924555,
+      "median_ttft_s": 2.741627164010424,
+      "shared_decode_s": 24.361290939035825,
+      "aggregate_decode_tps": 1149.5696213342126,
+      "median_decode_tps": 145.45616687012256,
+      "status": "measured",
+      "output_tokens": 4096,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.013652515429212643
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.009325809325809327
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.057259158751696064
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.035733297844024486
+        }
+      ]
+    },
+    {
+      "input_target": 100000,
+      "input_actual": [
+        99993
+      ],
+      "concurrency": 1,
+      "effective_prefill_tps": 14068.608039831937,
+      "median_ttft_s": 7.107349492958747,
+      "shared_decode_s": 10.214636655990034,
+      "aggregate_decode_tps": 400.895316976216,
+      "median_decode_tps": 400.895316976216,
+      "status": "measured",
+      "output_tokens": 4096,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "input_target": 100000,
+      "input_actual": [
+        99991,
+        99992,
+        99980,
+        99990
+      ],
+      "concurrency": 4,
+      "effective_prefill_tps": 6780.504367042841,
+      "median_ttft_s": 32.74248088494642,
+      "shared_decode_s": 0,
+      "aggregate_decode_tps": null,
+      "median_decode_tps": null,
+      "status": "no_overlap",
+      "output_tokens": 4096,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0037621808313802888
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.003902378592666006
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.06760583835596544
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.038348082595870206
+        }
+      ]
+    },
+    {
+      "input_target": 100000,
+      "input_actual": [
+        99991,
+        99991,
+        99992,
+        99991,
+        99992,
+        99992,
+        99993,
+        99992
+      ],
+      "concurrency": 8,
+      "effective_prefill_tps": 6161.978805899776,
+      "median_ttft_s": 68.35611268901266,
+      "shared_decode_s": 0,
+      "aggregate_decode_tps": null,
+      "median_decode_tps": null,
+      "status": "no_overlap",
+      "output_tokens": 4096,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.00011807072436389397
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.019616417817204974
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0034653465346534654
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.00018022347711161841
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.04936845904005774
+        }
+      ]
+    }
+  ],
+  "scope": {
+    "dry_run": false,
+    "base_url": "http://127.0.0.1:8010",
+    "model": "deepseek-v4.1-flash",
+    "key_file": "<serving-dir>/state/api-key",
+    "dspark_off_url": null,
+    "off_key_file": null,
+    "soak_minutes": 0,
+    "timeout": 2400,
+    "output_tokens": 4096,
+    "results": "<results-dir>",
+    "features_only": false,
+    "part": "speed",
+    "sizes": "5000,100000",
+    "concurrency": "1,4,8"
+  },
+  "kk-ds41-1017.service_sha256": "66e7d0f0849fe7db9b0a3daaadb7d76a673331c36d2283d1e0014f54f1aeb149",
+  "checks/print-config-2.txt_sha256": "5bc36b4d79f362d44b93ef64040437a87bf4a7ba9b18bbd20a8c2a0cea6b2ae3",
+  "observed_dspark_mode": "on",
+  "soak_iterations": 0,
+  "part": "speed",
+  "failed_checks": [],
+  "status": "passed",
+  "finished_at": 1792285641.9242523
+}

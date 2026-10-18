@@ -1,0 +1,71 @@
+{
+  "input_target": 100000,
+  "input_actual": [
+    99992,
+    99992,
+    99993,
+    99992,
+    99993,
+    99993,
+    99979,
+    99990
+  ],
+  "concurrency": 8,
+  "effective_prefill_tps": 7864.335742875084,
+  "median_ttft_s": 57.8937680774834,
+  "shared_decode_s": 44.33705112000462,
+  "aggregate_decode_tps": 714.3461100801487,
+  "median_decode_tps": 90.47737498694482,
+  "status": "measured",
+  "output_tokens": 4096,
+  "garbage_checks": [
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.008922485903711506
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.004250531316414552
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.004507753335737469
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0032152390196554235
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "providers": {
+    "tensorfold": {
+      "baseUrl": "http://192.168.254.1:18080/v1",
+      "api": "openai-completions",
+      "apiKey": "sandbox-placeholder",
+      "models": [
+        {
+          "id": "glm-5.3-flash",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "contextWindow": 524288,
+          "maxTokens": 32768,
+          "thinkingLevelMap": {
+            "max": "max"
+          },
+          "samplingParams": {
+            "temperature": 0
+          },
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "compat": {
+            "supportsStore": false,
+            "supportsDeveloperRole": false,
+            "supportsReasoningEffort": true,
+            "supportsUsageInStreaming": true,
+            "supportsStrictMode": false,
+            "maxTokensField": "max_tokens",
+            "thinkingFormat": "openai"
+          }
+        }
+      ]
+    },
+    "vllm": {
+      "baseUrl": "http://192.168.254.1:18080/v1",
+      "api": "openai-completions",
+      "apiKey": "sandbox-placeholder",
+      "models": [
+        {
+          "id": "glm-5.3-flash",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "contextWindow": 524288,
+          "maxTokens": 32768,
+          "thinkingLevelMap": {
+            "max": "max"
+          },
+          "samplingParams": {
+            "temperature": 0
+          },
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "compat": {
+            "supportsStore": false,
+            "supportsDeveloperRole": false,
+            "supportsReasoningEffort": true,
+            "supportsUsageInStreaming": true,
+            "supportsStrictMode": false,
+            "maxTokensField": "max_tokens",
+            "thinkingFormat": "openai"
+          }
+        }
+      ]
+    },
+    "endpoint": {
+      "baseUrl": "http://192.168.254.1:18080/v1",
+      "api": "openai-completions",
+      "apiKey": "sandbox-placeholder",
+      "models": [
+        {
+          "id": "glm-5.3-flash",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "contextWindow": 524288,
+          "maxTokens": 32768,
+          "thinkingLevelMap": {
+            "max": "max"
+          },
+          "samplingParams": {
+            "temperature": 0
+          },
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "compat": {
+            "supportsStore": false,
+            "supportsDeveloperRole": false,
+            "supportsReasoningEffort": true,
+            "supportsUsageInStreaming": true,
+            "supportsStrictMode": false,
+            "maxTokensField": "max_tokens",
+            "thinkingFormat": "openai"
+          }
+        }
+      ]
+    }
+  }
+}

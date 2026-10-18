@@ -1,0 +1,63 @@
+{
+  "url": "http://127.0.0.1:8801/v1/models",
+  "request": null,
+  "started_at": 1792267720.450015,
+  "status": 200,
+  "raw_response": "{\"object\":\"list\",\"data\":[{\"id\":\"glm-5.3-flash\",\"object\":\"model\",\"created\":1792267720,\"owned_by\":\"vllm\",\"root\":\"/models/GLM-5.3-Flash-NVFP4\",\"parent\":null,\"max_model_len\":524288,\"permission\":[{\"id\":\"modelperm-a5bc81ca3a53ef2d\",\"object\":\"model_permission\",\"created\":1792267720,\"allow_create_engine\":false,\"allow_sampling\":true,\"allow_logprobs\":true,\"allow_search_indices\":false,\"allow_view\":true,\"allow_fine_tuning\":false,\"organization\":\"*\",\"group\":null,\"is_blocking\":false}]},{\"id\":\"qwen3.6-27b\",\"object\":\"model\",\"created\":1792267720,\"owned_by\":\"vllm\",\"root\":\"/models/GLM-5.3-Flash-NVFP4\",\"parent\":null,\"max_model_len\":524288,\"permission\":[{\"id\":\"modelperm-8a6ef277f09a1545\",\"object\":\"model_permission\",\"created\":1792267720,\"allow_create_engine\":false,\"allow_sampling\":true,\"allow_logprobs\":true,\"allow_search_indices\":false,\"allow_view\":true,\"allow_fine_tuning\":false,\"organization\":\"*\",\"group\":null,\"is_blocking\":false}]}]}",
+  "response": {
+    "object": "list",
+    "data": [
+      {
+        "id": "glm-5.3-flash",
+        "object": "model",
+        "created": 1792267720,
+        "owned_by": "vllm",
+        "root": "/models/GLM-5.3-Flash-NVFP4",
+        "parent": null,
+        "max_model_len": 524288,
+        "permission": [
+          {
+            "id": "modelperm-a5bc81ca3a53ef2d",
+            "object": "model_permission",
+            "created": 1792267720,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "qwen3.6-27b",
+        "object": "model",
+        "created": 1792267720,
+        "owned_by": "vllm",
+        "root": "/models/GLM-5.3-Flash-NVFP4",
+        "parent": null,
+        "max_model_len": 524288,
+        "permission": [
+          {
+            "id": "modelperm-8a6ef277f09a1545",
+            "object": "model_permission",
+            "created": 1792267720,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  },
+  "elapsed_s": 0.012344782007858157
+}

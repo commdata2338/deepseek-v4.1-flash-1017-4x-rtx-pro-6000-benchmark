@@ -1,0 +1,4 @@
+kind,sent,ok,rounds,timeout_s,slowest_s
+plain,12,12,6,240.0,11.99
+schema,18,18,6,240.0,2.09
+tool_required,6,6,6,240.0,0.91

@@ -1,0 +1,3 @@
+{"target_tokens": 2000, "prompt_tokens": 1484, "passphrase": "ledger-69035-copper", "answer": "ledger-69035-copper", "ok": true, "seconds": 0.3}
+{"target_tokens": 30000, "prompt_tokens": 21934, "passphrase": "quartz-71215-falcon", "answer": "quartz-71215-falcon", "ok": true, "seconds": 1.61}
+{"target_tokens": 200000, "prompt_tokens": 145762, "passphrase": "falcon-79651-velvet", "answer": "falcon-79651-velvet", "ok": true, "seconds": 10.39}

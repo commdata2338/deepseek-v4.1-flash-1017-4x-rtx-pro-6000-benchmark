@@ -1,0 +1,25 @@
+1080 requests, lengths 8 to 6007
+  200 done
+  400 done
+  600 done
+  800 done
+  1000 done
+
+p = mean probability of the right next token (0 if it is not among the 20 most probable).
+first = share of prompts where the right token is the first choice.
+stale = share of prompts where the first choice is the token that is right with the newest 1-3 tokens gone.
+'whole pools' = the length is a multiple of 4; 'part pool' = remainder 1, 2 or 3.
+
+<results-dir>/jovian-r38-test/jovian-r38-8/shortctx.jsonl
+     lengths | whole pools: p, first | part pool: p, first, stale | difference in p
+    8-15     |          0.721,  83% |         0.780,  88%,   0% | +0.058
+   96-103    |          0.996, 100% |         0.998, 100%,   0% | +0.002
+  508-515    |          1.000, 100% |         1.000, 100%,   0% | -0.000
+ 1020-1027   |          1.000, 100% |         1.000, 100%,   0% | +0.000
+ 2040-2047   |          1.000, 100% |         1.000, 100%,   0% | -0.000
+ 2048-2055   |          1.000, 100% |         1.000, 100%,   0% | -0.000
+ 2056-2063   |          1.000, 100% |         1.000, 100%,   0% | +0.000
+ 3000-3007   |          1.000, 100% |         1.000, 100%,   0% | -0.000
+ 6000-6007   |          1.000, 100% |         1.000, 100%,   0% | -0.000
+
+Lengths 8 to 2,047 are under 2,048 tokens (the affected range in r24); 2,056 and above are the control.

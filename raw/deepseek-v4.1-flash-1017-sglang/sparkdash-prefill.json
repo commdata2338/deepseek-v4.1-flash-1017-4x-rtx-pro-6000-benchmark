@@ -1,0 +1,102 @@
+{
+ "benchId": "fd0d9087-00c8-4f1c-a09a-1b0e9fd72816",
+ "sparkId": "glm-host",
+ "status": "completed",
+ "startedAt": 1792273293492,
+ "completedAt": 1792273361366,
+ "config": {
+  "port": 8020,
+  "modelId": "glm-5.3-flash",
+  "contextSizes": [
+   8192,
+   16384,
+   32768,
+   65536,
+   131072,
+   262144
+  ]
+ },
+ "progress": {
+  "currentContext": null,
+  "completedLevels": 6,
+  "totalLevels": 6,
+  "message": "Done"
+ },
+ "results": [
+  {
+   "targetTokens": 8192,
+   "promptTokens": 8211,
+   "promptChars": 32767,
+   "prefillTps": 7406.09,
+   "ttftMs": 1108.68,
+   "ttftContentMs": 1108.68,
+   "completionTokens": 2,
+   "durationMs": 1136.35,
+   "model": "deepseek-v4.1-flash",
+   "error": null
+  },
+  {
+   "targetTokens": 16384,
+   "promptTokens": 16405,
+   "promptChars": 65535,
+   "prefillTps": 7742.7,
+   "ttftMs": 2118.77,
+   "ttftContentMs": 2118.77,
+   "completionTokens": 2,
+   "durationMs": 2145.14,
+   "model": "deepseek-v4.1-flash",
+   "error": null
+  },
+  {
+   "targetTokens": 32768,
+   "promptTokens": 32787,
+   "promptChars": 131071,
+   "prefillTps": 7977.72,
+   "ttftMs": 4109.82,
+   "ttftContentMs": 4109.82,
+   "completionTokens": 2,
+   "durationMs": 4135.86,
+   "model": "deepseek-v4.1-flash",
+   "error": null
+  },
+  {
+   "targetTokens": 65536,
+   "promptTokens": 65555,
+   "promptChars": 262143,
+   "prefillTps": 8127.96,
+   "ttftMs": 8065.37,
+   "ttftContentMs": 8065.37,
+   "completionTokens": 2,
+   "durationMs": 8090.76,
+   "model": "deepseek-v4.1-flash",
+   "error": null
+  },
+  {
+   "targetTokens": 131072,
+   "promptTokens": 131089,
+   "promptChars": 524287,
+   "prefillTps": 7885.79,
+   "ttftMs": 16623.46,
+   "ttftContentMs": 16623.46,
+   "completionTokens": 2,
+   "durationMs": 16647.93,
+   "model": "deepseek-v4.1-flash",
+   "error": null
+  },
+  {
+   "targetTokens": 262144,
+   "promptTokens": 262167,
+   "promptChars": 1048575,
+   "prefillTps": 7388.36,
+   "ttftMs": 35483.77,
+   "ttftContentMs": 35483.77,
+   "completionTokens": 2,
+   "durationMs": 35507.18,
+   "model": "deepseek-v4.1-flash",
+   "error": null
+  }
+ ],
+ "error": null,
+ "durationMs": 67874,
+ "owner": null
+}

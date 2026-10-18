@@ -1,0 +1,51 @@
+run,engine,configuration,shared_context_in,step_number,step,shared_context_tokens,prompt_tokens,output_tokens,seconds_to_the_full_reply
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",user message,1,"first request, 16 tokens",55887,55945,16,4.06
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",user message,2,the same request again,55887,55945,16,0.34
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",user message,3,"same context, other question",55887,55946,16,0.32
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",user message,4,"the same request, 300 tokens",55887,55945,300,1.39
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",user message,5,"the same request again, after 300 tokens",55887,55945,16,0.31
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",user message,6,"same context, third question",55887,55945,16,0.32
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",system message,1,"first request, 16 tokens",55887,55944,16,3.96
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",system message,2,the same request again,55887,55944,16,0.31
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",system message,3,"same context, other question",55887,55945,16,0.32
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",system message,4,"same context, third question",55887,55944,16,0.35
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",user message,1,"first request, 16 tokens",55887,55943,16,3.81
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",user message,2,the same request again,55887,55943,16,0.32
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",user message,3,"same context, other question",55887,55944,16,0.33
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",user message,4,"the same request, 300 tokens",55887,55943,300,1.47
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",user message,5,"the same request again, after 300 tokens",55887,55943,16,0.31
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",user message,6,"same context, third question",55887,55943,16,0.3
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",system message,1,"first request, 16 tokens",55887,55942,16,3.83
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",system message,2,the same request again,55887,55942,16,0.3
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",system message,3,"same context, other question",55887,55943,16,0.3
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",system message,4,"same context, third question",55887,55942,16,0.31
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",user message,1,"first request, 16 tokens",55887,55943,16,9.47
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",user message,2,the same request again,55887,55943,16,0.41
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",user message,3,"same context, other question",55887,55944,16,0.36
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",user message,4,"the same request, 300 tokens",55887,55943,300,2.99
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",user message,5,"the same request again, after 300 tokens",55887,55943,16,0.38
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",user message,6,"same context, third question",55887,55943,16,0.43
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",system message,1,"first request, 16 tokens",55887,55942,16,8.21
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",system message,2,the same request again,55887,55942,16,0.4
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",system message,3,"same context, other question",55887,55943,16,0.39
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",system message,4,"same context, third question",55887,55942,16,0.39
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",user message,1,"first request, 16 tokens",56348,56387,16,5.03
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",user message,2,the same request again,56348,56387,16,0.58
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",user message,3,"same context, other question",56348,56388,16,0.55
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",user message,4,"the same request, 300 tokens",56348,56387,300,1.54
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",user message,5,"the same request again, after 300 tokens",56348,56387,16,0.44
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",user message,6,"same context, third question",56348,56387,16,0.44
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",system message,1,"first request, 16 tokens",56348,56388,16,4.82
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",system message,2,the same request again,56348,56388,16,0.44
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",system message,3,"same context, other question",56348,56389,16,0.52
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",system message,4,"same context, third question",56348,56388,16,0.44
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",user message,1,"first request, 16 tokens",56348,56386,16,5.68
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",user message,2,the same request again,56348,56386,16,0.42
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",user message,3,"same context, other question",56348,56387,16,4.85
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",user message,4,"the same request, 300 tokens",56348,56386,300,1.14
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",user message,5,"the same request again, after 300 tokens",56348,56386,16,0.2
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",user message,6,"same context, third question",56348,56386,16,4.91
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",system message,1,"first request, 16 tokens",56348,56386,16,5.1
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",system message,2,the same request again,56348,56386,16,0.43
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",system message,3,"same context, other question",56348,56387,16,0.42
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",system message,4,"same context, third question",56348,56386,16,0.28

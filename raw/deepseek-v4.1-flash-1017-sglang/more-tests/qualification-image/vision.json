@@ -1,0 +1,72 @@
+{
+  "url": "http://127.0.0.1:8010/v1/chat/completions",
+  "request": {
+    "model": "deepseek-v4.1-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "Name the left color, then the right color. Reply exactly as color1,color2 in lowercase."
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABACAIAAABqVuVZAAAAiUlEQVR4nO3QsQkAQRDEsO2/6f8CroBxIHBu0H13qdb/p/UfECBAgEqt/4AAAQKUav0HBAgQoFLrPyBAgAClWv8BAQIEqNT6DwgQIECp1n9AgAABKrX+AwIECFCq9R8QIECASq3/gAABApRq/QcECBCgUus/IECAAKVa/wEBAgSo1PoPCBAgQKV+5WHpWnY4WfIAAAAASUVORK5CYII="
+            }
+          }
+        ]
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 256,
+    "chat_template_kwargs": {
+      "thinking": false
+    }
+  },
+  "started_at": 1792268402.7524562,
+  "status": 200,
+  "raw_response": "{\"id\":\"a02b7756be6446288bd6e5db570987d9\",\"object\":\"chat.completion\",\"created\":1792268402,\"model\":\"deepseek-v4.1-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"red,blue\",\"reasoning_content\":null,\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"stop\",\"matched_stop\":1}],\"usage\":{\"prompt_tokens\":214,\"total_tokens\":218,\"completion_tokens\":4,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":189},\"reasoning_tokens\":0},\"metadata\":{\"weight_version\":\"default\",\"weight_versions\":[{\"version\":\"default\",\"start\":0,\"end\":4}]}}",
+  "response": {
+    "id": "a02b7756be6446288bd6e5db570987d9",
+    "object": "chat.completion",
+    "created": 1792268402,
+    "model": "deepseek-v4.1-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "red,blue",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 1
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 214,
+      "total_tokens": 218,
+      "completion_tokens": 4,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 189
+      },
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default",
+      "weight_versions": [
+        {
+          "version": "default",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  "elapsed_s": 0.20450779399834573
+}

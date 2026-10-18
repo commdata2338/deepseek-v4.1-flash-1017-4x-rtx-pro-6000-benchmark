@@ -1,0 +1,4 @@
+{"shared_context_tokens": 55887}
+{"concurrency": 4, "context_tokens": 55954, "output_tokens": 2000, "median_ttft_s": 0.572, "status": "measured", "shared_decode_s": 19.6, "aggregate_decode_tps": 338.3, "median_decode_tps": 80.7}
+{"concurrency": 8, "context_tokens": 55954, "output_tokens": 2000, "median_ttft_s": 0.807, "status": "measured", "shared_decode_s": 29.42, "aggregate_decode_tps": 515.8, "median_decode_tps": 65.1}
+{"concurrency": 16, "context_tokens": 55954, "output_tokens": 2000, "median_ttft_s": 14.263, "status": "no_overlap"}

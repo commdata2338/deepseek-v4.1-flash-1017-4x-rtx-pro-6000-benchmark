@@ -1,0 +1,43 @@
+{
+  "input_target": 100000,
+  "input_actual": [
+    99991,
+    99992,
+    99980,
+    99990
+  ],
+  "concurrency": 4,
+  "effective_prefill_tps": 6780.504367042841,
+  "median_ttft_s": 32.74248088494642,
+  "shared_decode_s": 0,
+  "aggregate_decode_tps": null,
+  "median_decode_tps": null,
+  "status": "no_overlap",
+  "output_tokens": 4096,
+  "garbage_checks": [
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0037621808313802888
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.003902378592666006
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.06760583835596544
+    },
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.038348082595870206
+    }
+  ]
+}

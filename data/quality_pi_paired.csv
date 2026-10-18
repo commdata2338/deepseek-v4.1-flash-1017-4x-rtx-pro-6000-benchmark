@@ -1,0 +1,19 @@
+run_a,run_b,data_set,tests,tasks,both_pass,only_a_passes,only_b_passes,neither_passes,exact_mcnemar_p,b_minus_a_percentage_points,difference_ci95_low,difference_ci95_high
+glm_r38_8,deepseek_1017_kk_8,HumanEval+,base tests,164,160,3,0,1,0.25,-1.8293,-3.8802,0.2217
+glm_r38_8,deepseek_1017_kk_8,HumanEval+,all tests,164,149,6,3,6,0.5078,-1.8293,-5.4036,1.7451
+glm_r38_8,deepseek_1017_kk_8,MBPP+,base tests,378,361,4,10,3,0.1796,1.5873,-0.3462,3.5208
+glm_r38_8,deepseek_1017_kk_8,MBPP+,all tests,378,304,13,16,45,0.7111,0.7937,-1.9975,3.5848
+glm_r38_8,deepseek_1017_kk_8,both,base tests,542,521,7,10,4,0.6291,0.5535,-0.9368,2.0438
+glm_r38_8,deepseek_1017_kk_8,both,all tests,542,453,19,19,51,1.0,0.0,-2.2292,2.2292
+deepseek_1017_sglang,deepseek_1017_kk_8,HumanEval+,base tests,164,159,2,1,2,1.0,-0.6098,-2.6776,1.4581
+deepseek_1017_sglang,deepseek_1017_kk_8,HumanEval+,all tests,164,149,4,3,8,1.0,-0.6098,-3.7703,2.5508
+deepseek_1017_sglang,deepseek_1017_kk_8,MBPP+,base tests,378,369,1,2,6,1.0,0.2646,-0.6331,1.1622
+deepseek_1017_sglang,deepseek_1017_kk_8,MBPP+,all tests,378,312,7,8,51,1.0,0.2646,-1.7434,2.2725
+deepseek_1017_sglang,deepseek_1017_kk_8,both,base tests,542,528,3,3,8,1.0,0.0,-0.8858,0.8858
+deepseek_1017_sglang,deepseek_1017_kk_8,both,all tests,542,461,11,11,59,1.0,0.0,-1.6961,1.6961
+glm_r38_8,deepseek_1017_sglang,HumanEval+,base tests,164,161,2,0,1,0.5,-1.2195,-2.8993,0.4603
+glm_r38_8,deepseek_1017_sglang,HumanEval+,all tests,164,150,5,3,6,0.7266,-1.2195,-4.5946,2.1556
+glm_r38_8,deepseek_1017_sglang,MBPP+,base tests,378,360,5,10,3,0.3018,1.3228,-0.681,3.3265
+glm_r38_8,deepseek_1017_sglang,MBPP+,all tests,378,303,14,16,45,0.8555,0.5291,-2.3104,3.3686
+glm_r38_8,deepseek_1017_sglang,both,base tests,542,521,7,10,4,0.6291,0.5535,-0.9368,2.0438
+glm_r38_8,deepseek_1017_sglang,both,all tests,542,453,19,19,51,1.0,0.0,-2.2292,2.2292

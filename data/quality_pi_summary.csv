@@ -1,0 +1,10 @@
+run,engine,configuration,data_set,tasks,base_tests_pass,all_tests_pass,base_tests_percent,base_tests_ci95_low,base_tests_ci95_high,all_tests_percent,all_tests_ci95_low,all_tests_ci95_high
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",HumanEval+,164,160,152,97.6,93.9,99.0,92.7,87.6,95.8
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",MBPP+,378,371,320,98.1,96.2,99.1,84.7,80.7,87.9
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",both,542,531,472,98.0,96.4,98.9,87.1,84.0,89.6
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",HumanEval+,164,161,153,98.2,94.8,99.4,93.3,88.4,96.2
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",MBPP+,378,370,319,97.9,95.9,98.9,84.4,80.4,87.7
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",both,542,531,472,98.0,96.4,98.9,87.1,84.0,89.6
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",HumanEval+,164,163,155,99.4,96.6,99.9,94.5,89.9,97.1
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",MBPP+,378,365,317,96.6,94.2,98.0,83.9,79.8,87.2
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",both,542,528,472,97.4,95.7,98.5,87.1,84.0,89.6

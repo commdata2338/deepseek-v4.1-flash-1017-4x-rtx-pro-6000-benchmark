@@ -1,0 +1,77 @@
+{
+  "started_at": 1792268352.5951483,
+  "development_only": true,
+  "features_only": false,
+  "checks": [
+    {
+      "name": "integrity-100",
+      "status": "passed",
+      "seconds": 0.19299610401503742,
+      "result": {
+        "target_tokens": 100,
+        "actual_tokens": 101,
+        "planted": "FEB582C76473A452",
+        "position": 0.15
+      }
+    },
+    {
+      "name": "integrity-2000",
+      "status": "passed",
+      "seconds": 0.4143263850128278,
+      "result": {
+        "target_tokens": 2000,
+        "actual_tokens": 2001,
+        "planted": "F3DFA08968A584E9",
+        "position": 0.35
+      }
+    },
+    {
+      "name": "integrity-30000",
+      "status": "passed",
+      "seconds": 4.033901468967088,
+      "result": {
+        "target_tokens": 30000,
+        "actual_tokens": 29994,
+        "planted": "F94BCD6030EC54A9",
+        "position": 0.65
+      }
+    },
+    {
+      "name": "integrity-200000",
+      "status": "passed",
+      "seconds": 28.611876742099412,
+      "result": {
+        "target_tokens": 200000,
+        "actual_tokens": 199991,
+        "planted": "F606D816279CA43A",
+        "position": 0.85
+      }
+    }
+  ],
+  "skipped": [],
+  "speed": [],
+  "scope": {
+    "dry_run": false,
+    "base_url": "http://127.0.0.1:8010",
+    "model": "deepseek-v4.1-flash",
+    "key_file": "<serving-dir>/state/api-key",
+    "dspark_off_url": null,
+    "off_key_file": null,
+    "soak_minutes": 0,
+    "timeout": 2400,
+    "output_tokens": 1024,
+    "results": "<results-dir>",
+    "features_only": false,
+    "part": "integrity",
+    "sizes": "",
+    "concurrency": "1,2,4,8"
+  },
+  "pins.json_sha256": "89d7f9baa01e725394fb40588093883704eabe7d50a9ce6c1ac4e8ebf9f8d7f7",
+  "model-manifest.json_sha256": "ddc21107231bd1f12cc53eab18d677710b8c09625c6eca5709c6fe4aa11e6912",
+  "observed_dspark_mode": "on",
+  "soak_iterations": 0,
+  "part": "integrity",
+  "failed_checks": [],
+  "status": "passed",
+  "finished_at": 1792268385.8714101
+}

@@ -1,0 +1,3 @@
+{"target_tokens": 2000, "prompt_tokens": 1495, "passphrase": "garnet-60494-harbor", "answer": "garnet-60494-harbor", "ok": true, "seconds": 0.28}
+{"target_tokens": 30000, "prompt_tokens": 21883, "passphrase": "thistle-15818-glacier", "answer": "thistle-15818-glacier", "ok": true, "seconds": 1.53}
+{"target_tokens": 200000, "prompt_tokens": 145693, "passphrase": "canvas-55706-beacon", "answer": "canvas-55706-beacon", "ok": true, "seconds": 11.01}

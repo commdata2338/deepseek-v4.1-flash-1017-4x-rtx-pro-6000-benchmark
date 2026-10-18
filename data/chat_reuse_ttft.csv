@@ -1,0 +1,97 @@
+run,engine,configuration,nominal_size,round,case,prompt_tokens,cached_tokens_reported,ttft_s
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",9000,1,cold,9853,0,0.816
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",9000,1,identical resend,9853,9472,0.246
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",9000,1,resend + new turn,10517,9472,0.245
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",9000,1,own reply + new turn,10555,9728,0.255
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",9000,2,cold,9860,0,0.782
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",9000,2,identical resend,9860,9728,0.246
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",9000,2,resend + new turn,10519,9728,0.244
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",9000,2,own reply + new turn,10561,9728,0.242
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",56000,1,cold,61149,0,4.379
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",56000,1,identical resend,61149,60928,0.293
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",56000,1,resend + new turn,61813,60928,0.287
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",56000,1,own reply + new turn,61902,60928,0.283
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",56000,2,cold,61212,0,4.233
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",56000,2,identical resend,61212,60928,0.272
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",56000,2,resend + new turn,61871,60928,0.277
+deepseek_1017_kk_16,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","16 slots, Engram tables in RAM",56000,2,own reply + new turn,61913,61184,0.287
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",9000,1,cold,9853,0,0.733
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",9000,1,identical resend,9853,9472,0.242
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",9000,1,resend + new turn,10517,9472,0.225
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",9000,1,own reply + new turn,10558,9728,0.243
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",9000,2,cold,9860,0,0.734
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",9000,2,identical resend,9860,9728,0.222
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",9000,2,resend + new turn,10519,9728,0.23
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",9000,2,own reply + new turn,10566,9728,0.227
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",56000,1,cold,61149,0,4.255
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",56000,1,identical resend,61149,60928,0.296
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",56000,1,resend + new turn,61813,60928,0.264
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",56000,1,own reply + new turn,61899,60928,0.263
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",56000,2,cold,61212,0,4.218
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",56000,2,identical resend,61212,60928,0.267
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",56000,2,resend + new turn,61871,60928,0.27
+deepseek_1017_kk_8,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 1",56000,2,own reply + new turn,61907,61184,0.277
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",9000,1,cold,9853,9472,0.254
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",9000,1,identical resend,9853,9472,0.238
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",9000,1,resend + new turn,10517,10240,0.23
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",9000,1,own reply + new turn,10614,9728,0.24
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",9000,2,cold,9860,9728,0.248
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",9000,2,identical resend,9860,9728,0.241
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",9000,2,resend + new turn,10519,10240,0.238
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",9000,2,own reply + new turn,10557,9728,0.257
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",56000,1,cold,61149,60928,0.293
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",56000,1,identical resend,61149,60928,0.279
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",56000,1,resend + new turn,61813,61440,0.269
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",56000,1,own reply + new turn,61905,60928,0.273
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",56000,2,cold,61212,60928,0.267
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",56000,2,identical resend,61212,60928,0.269
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",56000,2,resend + new turn,61871,61696,0.269
+deepseek_1017_kk_8_round2,"DeepSeek-V4.1-Flash-1017, Karmic Kraken","8 slots, Engram tables in RAM, round 2",56000,2,own reply + new turn,61916,61184,0.276
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",9000,1,cold,9853,,1.503
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",9000,1,identical resend,9853,,0.154
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",9000,1,resend + new turn,10517,,0.201
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",9000,1,own reply + new turn,10557,,0.201
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",9000,2,cold,9860,,1.468
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",9000,2,identical resend,9860,,0.14
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",9000,2,resend + new turn,10519,,0.201
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",9000,2,own reply + new turn,10612,,0.207
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",56000,1,cold,61149,,9.068
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",56000,1,identical resend,61149,,0.293
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",56000,1,resend + new turn,61813,,0.342
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",56000,1,own reply + new turn,61857,,0.328
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",56000,2,cold,61212,,9.069
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",56000,2,identical resend,61212,,0.304
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",56000,2,resend + new turn,61871,,0.354
+deepseek_1017_sglang,"DeepSeek-V4.1-Flash-1017, SGLang","the community recipe, 8 slots, Engram tables in RAM (Appendix F)",56000,2,own reply + new turn,61973,,0.344
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",9000,1,cold,13526,,1.216
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",9000,1,identical resend,13526,,0.41
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",9000,1,resend + new turn,14424,,0.583
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",9000,1,own reply + new turn,14483,,0.561
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",9000,2,cold,13505,,1.209
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",9000,2,identical resend,13505,,0.415
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",9000,2,resend + new turn,14385,,0.572
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",9000,2,own reply + new turn,14448,,0.539
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",56000,1,cold,83571,,7.574
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",56000,1,identical resend,83571,,0.553
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",56000,1,resend + new turn,84469,,0.715
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",56000,1,own reply + new turn,84527,,0.738
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",56000,2,cold,83584,,7.567
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",56000,2,identical resend,83584,,0.538
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",56000,2,resend + new turn,84464,,0.683
+glm_r38_16_aligned,"GLM-5.3-Flash, Jovian Judgement r38","16 slots, GPU links on, thinking-switch template, checkpoint policy aligned (GLM paper, session 6)",56000,2,own reply + new turn,84506,,0.716
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",9000,1,cold,13532,,1.356
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",9000,1,identical resend,13532,,0.049
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",9000,1,resend + new turn,14430,,1.281
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",9000,1,own reply + new turn,14750,,0.31
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",9000,2,cold,13511,,1.223
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",9000,2,identical resend,13511,,0.052
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",9000,2,resend + new turn,14391,,1.29
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",9000,2,own reply + new turn,14701,,0.307
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",56000,1,cold,83577,,7.852
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",56000,1,identical resend,83577,,0.163
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",56000,1,resend + new turn,84475,,7.898
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",56000,1,own reply + new turn,84836,,0.342
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",56000,2,cold,83590,,7.635
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",56000,2,identical resend,83590,,0.138
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",56000,2,resend + new turn,84470,,7.741
+glm_r38_8,"GLM-5.3-Flash, Jovian Judgement r38","8 slots, GPU links on, stock template (GLM paper, session 6)",56000,2,own reply + new turn,84872,,0.535

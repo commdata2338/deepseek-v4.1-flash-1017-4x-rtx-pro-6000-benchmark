@@ -1,0 +1,3 @@
+{"target_tokens": 2000, "prompt_tokens": 1481, "passphrase": "engine-83547-stone", "answer": "engine-83547-stone", "ok": true, "seconds": 0.29}
+{"target_tokens": 30000, "prompt_tokens": 21909, "passphrase": "ledger-47576-river", "answer": "ledger-47576-river", "ok": true, "seconds": 1.5}
+{"target_tokens": 200000, "prompt_tokens": 145858, "passphrase": "lantern-44033-velvet", "answer": "lantern-44033-velvet", "ok": true, "seconds": 10.44}

@@ -1,0 +1,4 @@
+{"label": "deepseek-1017-kk", "context_in": "system message", "step": "first request, 16 tokens", "shared_context_tokens": 55887, "seconds": 3.83, "prompt_tokens": 55942, "completion_tokens": 16, "cached_tokens": 0}
+{"label": "deepseek-1017-kk", "context_in": "system message", "step": "the same request again", "shared_context_tokens": 55887, "seconds": 0.3, "prompt_tokens": 55942, "completion_tokens": 16, "cached_tokens": 55808}
+{"label": "deepseek-1017-kk", "context_in": "system message", "step": "same context, other question", "shared_context_tokens": 55887, "seconds": 0.3, "prompt_tokens": 55943, "completion_tokens": 16, "cached_tokens": 55808}
+{"label": "deepseek-1017-kk", "context_in": "system message", "step": "same context, third question", "shared_context_tokens": 55887, "seconds": 0.31, "prompt_tokens": 55942, "completion_tokens": 16, "cached_tokens": 55808}

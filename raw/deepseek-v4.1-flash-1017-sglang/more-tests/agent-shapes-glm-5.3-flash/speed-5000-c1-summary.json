@@ -1,0 +1,22 @@
+{
+  "input_target": 5000,
+  "input_actual": [
+    5001
+  ],
+  "concurrency": 1,
+  "effective_prefill_tps": 10133.963232534315,
+  "median_ttft_s": 0.49326634709723294,
+  "shared_decode_s": 6.509947974001989,
+  "aggregate_decode_tps": 260.98518863516205,
+  "median_decode_tps": 260.98518863516205,
+  "status": "measured",
+  "output_tokens": 1700,
+  "garbage_checks": [
+    {
+      "empty": false,
+      "repeated_block_six_times": false,
+      "replacement_character": false,
+      "non_ascii_or_control_fraction": 0.0007049203440011279
+    }
+  ]
+}

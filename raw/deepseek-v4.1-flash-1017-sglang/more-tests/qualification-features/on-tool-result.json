@@ -1,0 +1,101 @@
+{
+  "url": "http://127.0.0.1:8010/v1/chat/completions",
+  "request": {
+    "model": "deepseek-v4.1-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Use lookup_fixture for key ORCHID. Then return only its value."
+      },
+      {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": null,
+        "tool_calls": [
+          {
+            "id": "call_2da56486eec442dd853f6649",
+            "index": 0,
+            "type": "function",
+            "function": {
+              "name": "lookup_fixture",
+              "arguments": "{\"key\": \"ORCHID\"}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "call_2da56486eec442dd853f6649",
+        "content": "{\"value\": \"SYNTHETIC-58E9779F5463\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 256,
+    "chat_template_kwargs": {
+      "thinking": false
+    },
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "lookup_fixture",
+          "description": "Read a synthetic fixture.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "key"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    ],
+    "tool_choice": "none"
+  },
+  "started_at": 1792268347.5398772,
+  "status": 200,
+  "raw_response": "{\"id\":\"a1964df615f64c0dad7c5b997bbf5b2f\",\"object\":\"chat.completion\",\"created\":1792268347,\"model\":\"deepseek-v4.1-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"SYNTHETIC-58E9779F5463\",\"reasoning_content\":null,\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"stop\",\"matched_stop\":1}],\"usage\":{\"prompt_tokens\":359,\"total_tokens\":373,\"completion_tokens\":14,\"prompt_tokens_details\":null,\"reasoning_tokens\":0},\"metadata\":{\"weight_version\":\"default\",\"weight_versions\":[{\"version\":\"default\",\"start\":0,\"end\":14}]}}",
+  "response": {
+    "id": "a1964df615f64c0dad7c5b997bbf5b2f",
+    "object": "chat.completion",
+    "created": 1792268347,
+    "model": "deepseek-v4.1-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "SYNTHETIC-58E9779F5463",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 1
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 359,
+      "total_tokens": 373,
+      "completion_tokens": 14,
+      "prompt_tokens_details": null,
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default",
+      "weight_versions": [
+        {
+          "version": "default",
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  "elapsed_s": 0.2458125309785828
+}

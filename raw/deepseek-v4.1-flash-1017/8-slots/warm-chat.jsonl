@@ -1,0 +1,16 @@
+{"size": 9000, "round": 1, "case": "cold", "ttft_s": 0.733, "prompt_tokens": 9853, "cached_tokens": 0}
+{"size": 9000, "round": 1, "case": "identical resend", "ttft_s": 0.242, "prompt_tokens": 9853, "cached_tokens": 9472}
+{"size": 9000, "round": 1, "case": "resend + new turn", "ttft_s": 0.225, "prompt_tokens": 10517, "cached_tokens": 9472}
+{"size": 9000, "round": 1, "case": "own reply + new turn", "ttft_s": 0.243, "prompt_tokens": 10558, "cached_tokens": 9728}
+{"size": 9000, "round": 2, "case": "cold", "ttft_s": 0.734, "prompt_tokens": 9860, "cached_tokens": 0}
+{"size": 9000, "round": 2, "case": "identical resend", "ttft_s": 0.222, "prompt_tokens": 9860, "cached_tokens": 9728}
+{"size": 9000, "round": 2, "case": "resend + new turn", "ttft_s": 0.23, "prompt_tokens": 10519, "cached_tokens": 9728}
+{"size": 9000, "round": 2, "case": "own reply + new turn", "ttft_s": 0.227, "prompt_tokens": 10566, "cached_tokens": 9728}
+{"size": 56000, "round": 1, "case": "cold", "ttft_s": 4.255, "prompt_tokens": 61149, "cached_tokens": 0}
+{"size": 56000, "round": 1, "case": "identical resend", "ttft_s": 0.296, "prompt_tokens": 61149, "cached_tokens": 60928}
+{"size": 56000, "round": 1, "case": "resend + new turn", "ttft_s": 0.264, "prompt_tokens": 61813, "cached_tokens": 60928}
+{"size": 56000, "round": 1, "case": "own reply + new turn", "ttft_s": 0.263, "prompt_tokens": 61899, "cached_tokens": 60928}
+{"size": 56000, "round": 2, "case": "cold", "ttft_s": 4.218, "prompt_tokens": 61212, "cached_tokens": 0}
+{"size": 56000, "round": 2, "case": "identical resend", "ttft_s": 0.267, "prompt_tokens": 61212, "cached_tokens": 60928}
+{"size": 56000, "round": 2, "case": "resend + new turn", "ttft_s": 0.27, "prompt_tokens": 61871, "cached_tokens": 60928}
+{"size": 56000, "round": 2, "case": "own reply + new turn", "ttft_s": 0.277, "prompt_tokens": 61907, "cached_tokens": 61184}

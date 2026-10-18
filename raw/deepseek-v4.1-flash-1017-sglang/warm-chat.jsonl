@@ -1,0 +1,16 @@
+{"size": 9000, "round": 1, "case": "cold", "ttft_s": 1.503, "prompt_tokens": 9853, "cached_tokens": null}
+{"size": 9000, "round": 1, "case": "identical resend", "ttft_s": 0.154, "prompt_tokens": 9853, "cached_tokens": null}
+{"size": 9000, "round": 1, "case": "resend + new turn", "ttft_s": 0.201, "prompt_tokens": 10517, "cached_tokens": null}
+{"size": 9000, "round": 1, "case": "own reply + new turn", "ttft_s": 0.201, "prompt_tokens": 10557, "cached_tokens": null}
+{"size": 9000, "round": 2, "case": "cold", "ttft_s": 1.468, "prompt_tokens": 9860, "cached_tokens": null}
+{"size": 9000, "round": 2, "case": "identical resend", "ttft_s": 0.14, "prompt_tokens": 9860, "cached_tokens": null}
+{"size": 9000, "round": 2, "case": "resend + new turn", "ttft_s": 0.201, "prompt_tokens": 10519, "cached_tokens": null}
+{"size": 9000, "round": 2, "case": "own reply + new turn", "ttft_s": 0.207, "prompt_tokens": 10612, "cached_tokens": null}
+{"size": 56000, "round": 1, "case": "cold", "ttft_s": 9.068, "prompt_tokens": 61149, "cached_tokens": null}
+{"size": 56000, "round": 1, "case": "identical resend", "ttft_s": 0.293, "prompt_tokens": 61149, "cached_tokens": null}
+{"size": 56000, "round": 1, "case": "resend + new turn", "ttft_s": 0.342, "prompt_tokens": 61813, "cached_tokens": null}
+{"size": 56000, "round": 1, "case": "own reply + new turn", "ttft_s": 0.328, "prompt_tokens": 61857, "cached_tokens": null}
+{"size": 56000, "round": 2, "case": "cold", "ttft_s": 9.069, "prompt_tokens": 61212, "cached_tokens": null}
+{"size": 56000, "round": 2, "case": "identical resend", "ttft_s": 0.304, "prompt_tokens": 61212, "cached_tokens": null}
+{"size": 56000, "round": 2, "case": "resend + new turn", "ttft_s": 0.354, "prompt_tokens": 61871, "cached_tokens": null}
+{"size": 56000, "round": 2, "case": "own reply + new turn", "ttft_s": 0.344, "prompt_tokens": 61973, "cached_tokens": null}

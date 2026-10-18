@@ -1,0 +1,24 @@
+{
+  "label": "talk-6000-o300-under-2x56000-o4000",
+  "talk_prompt_tokens": 6001,
+  "talk_output_tokens": 300,
+  "alone_ttft_s": 0.5644019149476662,
+  "alone_elapsed_s": 1.6595904919086024,
+  "under_load_ttft_s": 0.41861943900585175,
+  "under_load_elapsed_s": 2.327966182027012,
+  "talk_sent_at_s": 16.273393093026243,
+  "background_ttft_s": [
+    5.082817462040111,
+    16.27182940999046
+  ],
+  "background_end_s": [
+    29.0893172910437,
+    36.22966654400807
+  ],
+  "background_prompt_tokens": [
+    55992,
+    55991
+  ],
+  "background_output_tokens": 4000,
+  "status": "overlapped"
+}

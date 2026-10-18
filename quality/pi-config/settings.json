@@ -1,0 +1,13 @@
+{
+  "defaultThinkingLevel": "max",
+  "compaction": {
+    "enabled": false
+  },
+  "retry": {
+    "enabled": false
+  },
+  "cacheWarming": "off",
+  "enableInstallTelemetry": false,
+  "enableAnalytics": false,
+  "quietStartup": true
+}

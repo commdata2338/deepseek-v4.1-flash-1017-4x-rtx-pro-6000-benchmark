@@ -1,0 +1,28 @@
+Preflight: Hub verification, shard identities, metadata hashes, image IDs, name/port and disk passed.
+[2026-10-17T15:13:00-0500] +0s Stopping GLM
+[2026-10-17T15:13:08-0500] +8s GPU memory released in 0s (four GPUs <=6144 MiB, no compute processes besides one small process of the host)
+MemAvailable=258.7 GiB, Shmem=23.3 GiB; RAM mode: 189.1 GiB tables locked in a 240 GiB cgroup cap; about 40 GiB left for the host.
+[2026-10-17T15:13:08-0500] +8s Starting DeepSeek 1017; load from the internal NVMe begins
+Waiting on port 8010: 0s; [Errno 2] No such file or directory: '<serving-dir>/state/api-key'
+Waiting on port 8010: 15s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 30s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 45s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 60s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 75s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 90s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 105s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 120s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 135s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 150s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 165s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 180s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 195s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 210s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 225s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 240s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 255s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 270s; [Errno 104] Connection reset by peer
+Waiting on port 8010: 285s; [Errno 104] Connection reset by peer
+deepseek-v4.1-flash ready after 300.1s
+[2026-10-17T15:18:08-0500] +308s DeepSeek 1017 ready; load plus smoke=300s; total=308s
+[2026-10-17T15:18:08-0500] up exit 0

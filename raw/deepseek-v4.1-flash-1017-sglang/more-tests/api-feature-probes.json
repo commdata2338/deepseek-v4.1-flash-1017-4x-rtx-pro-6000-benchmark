@@ -1,0 +1,65 @@
+[
+ {
+  "probe": "json_schema strict, thinking off",
+  "http": 200,
+  "seconds": 0.25,
+  "reasoning_chars": 0,
+  "parsed": true,
+  "matches_schema": true,
+  "answer": {
+   "city": "Tokyo",
+   "country": "Japan",
+   "is_capital": true
+  },
+  "verdict": "pass"
+ },
+ {
+  "probe": "json_schema strict, thinking on (low)",
+  "http": 200,
+  "seconds": 0.52,
+  "reasoning_chars": 162,
+  "parsed": true,
+  "matches_schema": true,
+  "answer": {
+   "city": "Tokyo",
+   "country": "Japan",
+   "is_capital": true
+  },
+  "verdict": "pass"
+ },
+ {
+  "probe": "assistant prefill with logprobs, top_logprobs=20",
+  "http": 200,
+  "seconds": 0.16,
+  "reply": "Positive",
+  "repeats_prefix": false,
+  "tokens": 2,
+  "top_logprobs_per_token": [
+   20,
+   20
+  ],
+  "first_token_top5": [
+   [
+    "Positive",
+    -0.248
+   ],
+   [
+    "Sent",
+    -1.998
+   ],
+   [
+    "positive",
+    -2.498
+   ],
+   [
+    "Based",
+    -6.873
+   ],
+   [
+    "The",
+    -7.873
+   ]
+  ],
+  "verdict": "pass"
+ }
+]

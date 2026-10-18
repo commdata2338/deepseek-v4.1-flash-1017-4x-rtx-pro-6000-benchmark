@@ -1,0 +1,7 @@
+engine,probe,http_status,seconds,verdict
+Karmic Kraken,"json_schema strict, thinking off",200,0.32,pass
+Karmic Kraken,"json_schema strict, thinking on (low)",200,0.41,pass
+Karmic Kraken,"assistant prefill with logprobs, top_logprobs=20",200,0.43,pass
+SGLang,"json_schema strict, thinking off",200,0.25,pass
+SGLang,"json_schema strict, thinking on (low)",200,0.52,pass
+SGLang,"assistant prefill with logprobs, top_logprobs=20",200,0.16,pass

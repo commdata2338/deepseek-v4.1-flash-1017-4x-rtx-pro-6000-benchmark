@@ -1,0 +1,4 @@
+input_tokens,concurrency,effective_prefill_tok_s,median_ttft_s,median_decode_tok_s_tokens_129_641,total_shared_decode_tok_s
+512,1,3012.68,0.17,146.62,169.67
+8192,1,7525.75,1.09,155.43,171.36
+65536,1,8014.63,8.18,155.58,160.44

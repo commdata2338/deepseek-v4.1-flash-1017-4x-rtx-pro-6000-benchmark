@@ -1,0 +1,41 @@
+{
+  "started_at": 1792268402.7302349,
+  "development_only": true,
+  "features_only": false,
+  "checks": [
+    {
+      "name": "single-image",
+      "status": "passed",
+      "seconds": 0.2049613520503044,
+      "result": {
+        "reported_image_tokens": 189
+      }
+    }
+  ],
+  "skipped": [],
+  "speed": [],
+  "scope": {
+    "dry_run": false,
+    "base_url": "http://127.0.0.1:8010",
+    "model": "deepseek-v4.1-flash",
+    "key_file": "<serving-dir>/state/api-key",
+    "dspark_off_url": null,
+    "off_key_file": null,
+    "soak_minutes": 0,
+    "timeout": 2400,
+    "output_tokens": 1024,
+    "results": "<results-dir>",
+    "features_only": false,
+    "part": "image",
+    "sizes": "",
+    "concurrency": "1,2,4,8"
+  },
+  "pins.json_sha256": "89d7f9baa01e725394fb40588093883704eabe7d50a9ce6c1ac4e8ebf9f8d7f7",
+  "model-manifest.json_sha256": "ddc21107231bd1f12cc53eab18d677710b8c09625c6eca5709c6fe4aa11e6912",
+  "observed_dspark_mode": "on",
+  "soak_iterations": 0,
+  "part": "image",
+  "failed_checks": [],
+  "status": "passed",
+  "finished_at": 1792268402.9573696
+}

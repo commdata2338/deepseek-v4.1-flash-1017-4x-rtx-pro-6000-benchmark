@@ -1,0 +1,67 @@
+[
+ {
+  "probe": "json_schema strict, thinking off",
+  "http": 200,
+  "seconds": 0.32,
+  "reasoning_chars": 0,
+  "parsed": true,
+  "matches_schema": true,
+  "answer": {
+   "city": "Tokyo",
+   "country": "Japan",
+   "is_capital": true
+  },
+  "verdict": "pass"
+ },
+ {
+  "probe": "json_schema strict, thinking on (low)",
+  "http": 200,
+  "seconds": 0.41,
+  "reasoning_chars": 0,
+  "parsed": true,
+  "matches_schema": true,
+  "answer": {
+   "city": "Tokyo",
+   "country": "Japan",
+   "is_capital": true
+  },
+  "verdict": "pass"
+ },
+ {
+  "probe": "assistant prefill with logprobs, top_logprobs=20",
+  "http": 200,
+  "seconds": 0.43,
+  "reply": "**Positive**",
+  "repeats_prefix": false,
+  "tokens": 4,
+  "top_logprobs_per_token": [
+   20,
+   20,
+   20,
+   20
+  ],
+  "first_token_top5": [
+   [
+    "**",
+    -1.011
+   ],
+   [
+    "\n",
+    -1.789
+   ],
+   [
+    "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    -1.955
+   ],
+   [
+    "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+    -2.639
+   ],
+   [
+    "<",
+    -3.727
+   ]
+  ],
+  "verdict": "pass"
+ }
+]

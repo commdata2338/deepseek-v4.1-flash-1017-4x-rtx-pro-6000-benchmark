@@ -1,0 +1,39 @@
+{
+  "started_at": 1792285239.754182,
+  "development_only": true,
+  "features_only": false,
+  "checks": [
+    {
+      "name": "greedy-repetition-garbage",
+      "status": "passed",
+      "seconds": 0.9237806330202147,
+      "result": null
+    }
+  ],
+  "skipped": [],
+  "speed": [],
+  "scope": {
+    "dry_run": false,
+    "base_url": "http://127.0.0.1:8010",
+    "model": "deepseek-v4.1-flash",
+    "key_file": "<serving-dir>/state/api-key",
+    "dspark_off_url": null,
+    "off_key_file": null,
+    "soak_minutes": 0,
+    "timeout": 2400,
+    "output_tokens": 1024,
+    "results": "<results-dir>",
+    "features_only": false,
+    "part": "greedy",
+    "sizes": "",
+    "concurrency": "1,2,4,8"
+  },
+  "kk-ds41-1017.service_sha256": "66e7d0f0849fe7db9b0a3daaadb7d76a673331c36d2283d1e0014f54f1aeb149",
+  "checks/print-config-2.txt_sha256": "5bc36b4d79f362d44b93ef64040437a87bf4a7ba9b18bbd20a8c2a0cea6b2ae3",
+  "observed_dspark_mode": "on",
+  "soak_iterations": 0,
+  "part": "greedy",
+  "failed_checks": [],
+  "status": "passed",
+  "finished_at": 1792285240.6928043
+}

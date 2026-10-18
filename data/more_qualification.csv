@@ -1,0 +1,28 @@
+engine,check,part,passed,total,seconds_or_minutes,status
+Karmic Kraken,features-dspark-on,features,1,1,1.57,passed
+Karmic Kraken,greedy-repetition-garbage,greedy,1,1,0.92,passed
+Karmic Kraken,single-image,image,1,1,0.34,passed
+Karmic Kraken,integrity-100,integrity,1,1,0.29,passed
+Karmic Kraken,integrity-2000,integrity,1,1,0.28,passed
+Karmic Kraken,integrity-30000,integrity,1,1,2.15,passed
+Karmic Kraken,integrity-200000,integrity,1,1,15.12,passed
+Karmic Kraken,speed-5000-c1,speed,1,1,10.55,passed
+Karmic Kraken,speed-5000-c4,speed,1,1,22.56,passed
+Karmic Kraken,speed-5000-c8,speed,1,1,34.89,passed
+Karmic Kraken,speed-100000-c1,speed,1,1,17.46,passed
+Karmic Kraken,speed-100000-c4,speed,1,1,70.56,passed
+Karmic Kraken,speed-100000-c8,speed,1,1,141.24,passed
+SGLang,features-dspark-on,features,1,1,1.01,passed
+SGLang,greedy-repetition-garbage,greedy,1,1,2.36,passed
+SGLang,single-image,image,1,1,0.2,passed
+SGLang,integrity-100,integrity,1,1,0.19,passed
+SGLang,integrity-2000,integrity,1,1,0.41,passed
+SGLang,integrity-30000,integrity,1,1,4.03,passed
+SGLang,integrity-200000,integrity,1,1,28.61,passed
+SGLang,speed-5000-c1,speed,1,1,25.94,passed
+SGLang,speed-5000-c4,speed,1,1,37.77,passed
+SGLang,speed-5000-c8,speed,1,1,51.85,passed
+SGLang,speed-100000-c1,speed,1,1,39.06,passed
+SGLang,speed-100000-c4,speed,1,1,86.8,passed
+SGLang,speed-100000-c8,speed,1,1,153.26,passed
+SGLang,"soak, 60 minutes",soak,571,571,60.0,passed

@@ -1,0 +1,4 @@
+server,prompt_tokens,output_tokens,alone_ttft_s,alone_reply_s,under_load_ttft_s,under_load_reply_s
+"DeepSeek-V4.1-Flash-1017, Karmic Kraken",5996,300,0.47,1.78,0.24,2.37
+"DeepSeek-V4.1-Flash-1017, SGLang",5996,300,0.79,4.31,0.82,4.84
+"GLM-5.3-Flash r38, live unit",6001,300,0.56,1.66,0.42,2.33

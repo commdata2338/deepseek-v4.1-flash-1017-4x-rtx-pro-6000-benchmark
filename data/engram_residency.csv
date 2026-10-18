@@ -1,0 +1,5 @@
+time,label,tables_gib,resident_gib,resident_share,host_mlocked_gib,host_mem_available_gib
+15:57:29,soak-mid,189.1,164.3,0.869,169.7,100.9
+16:34:22,soak-end,189.1,163.0,0.862,174.9,94.2
+16:35:31,after-file-read,189.1,162.9,0.861,175.1,93.3
+17:34:03,window-end,189.1,165.5,0.875,189.6,78.7

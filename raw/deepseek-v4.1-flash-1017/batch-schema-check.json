@@ -1,0 +1,416 @@
+{
+ "rounds": 6,
+ "timeout_s": 240.0,
+ "by_kind": {
+  "plain": {
+   "sent": 12,
+   "ok": 12
+  },
+  "schema": {
+   "sent": 18,
+   "ok": 18
+  },
+  "tool_required": {
+   "sent": 6,
+   "ok": 6
+  }
+ },
+ "rows": [
+  {
+   "kind": "schema",
+   "index": 2,
+   "thinking": false,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 1.04,
+   "round": 0
+  },
+  {
+   "kind": "schema",
+   "index": 1,
+   "thinking": false,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 1.24,
+   "round": 0
+  },
+  {
+   "kind": "schema",
+   "index": 0,
+   "thinking": false,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 1.48,
+   "round": 0
+  },
+  {
+   "kind": "tool_required",
+   "index": 0,
+   "thinking": false,
+   "tool_calls": 1,
+   "ok": true,
+   "seconds": 0.9,
+   "round": 0
+  },
+  {
+   "kind": "plain",
+   "index": 0,
+   "thinking": false,
+   "stream_chunks": 742,
+   "ok": true,
+   "seconds": 11.36,
+   "round": 0
+  },
+  {
+   "kind": "plain",
+   "index": 1,
+   "thinking": false,
+   "stream_chunks": 784,
+   "ok": true,
+   "seconds": 11.99,
+   "round": 0
+  },
+  {
+   "kind": "tool_required",
+   "index": 1,
+   "thinking": true,
+   "tool_calls": 1,
+   "ok": true,
+   "seconds": 0.91,
+   "round": 1
+  },
+  {
+   "kind": "schema",
+   "index": 4,
+   "thinking": true,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 1.32,
+   "round": 1
+  },
+  {
+   "kind": "schema",
+   "index": 5,
+   "thinking": true,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 1.53,
+   "round": 1
+  },
+  {
+   "kind": "schema",
+   "index": 3,
+   "thinking": true,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 2.09,
+   "round": 1
+  },
+  {
+   "kind": "plain",
+   "index": 3,
+   "thinking": true,
+   "stream_chunks": 705,
+   "ok": true,
+   "seconds": 10.63,
+   "round": 1
+  },
+  {
+   "kind": "plain",
+   "index": 2,
+   "thinking": true,
+   "stream_chunks": 752,
+   "ok": true,
+   "seconds": 11.32,
+   "round": 1
+  },
+  {
+   "kind": "schema",
+   "index": 6,
+   "thinking": false,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 0.72,
+   "round": 2
+  },
+  {
+   "kind": "schema",
+   "index": 7,
+   "thinking": false,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 0.54,
+   "round": 2
+  },
+  {
+   "kind": "schema",
+   "index": 8,
+   "thinking": false,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 0.91,
+   "round": 2
+  },
+  {
+   "kind": "tool_required",
+   "index": 2,
+   "thinking": false,
+   "tool_calls": 1,
+   "ok": true,
+   "seconds": 0.75,
+   "round": 2
+  },
+  {
+   "kind": "plain",
+   "index": 4,
+   "thinking": false,
+   "stream_chunks": 775,
+   "ok": true,
+   "seconds": 11.33,
+   "round": 2
+  },
+  {
+   "kind": "plain",
+   "index": 5,
+   "thinking": false,
+   "stream_chunks": 780,
+   "ok": true,
+   "seconds": 11.22,
+   "round": 2
+  },
+  {
+   "kind": "tool_required",
+   "index": 3,
+   "thinking": true,
+   "tool_calls": 1,
+   "ok": true,
+   "seconds": 0.81,
+   "round": 3
+  },
+  {
+   "kind": "schema",
+   "index": 9,
+   "thinking": true,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 1.62,
+   "round": 3
+  },
+  {
+   "kind": "schema",
+   "index": 10,
+   "thinking": true,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 1.57,
+   "round": 3
+  },
+  {
+   "kind": "schema",
+   "index": 11,
+   "thinking": true,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 1.59,
+   "round": 3
+  },
+  {
+   "kind": "plain",
+   "index": 6,
+   "thinking": true,
+   "stream_chunks": 712,
+   "ok": true,
+   "seconds": 10.87,
+   "round": 3
+  },
+  {
+   "kind": "plain",
+   "index": 7,
+   "thinking": true,
+   "stream_chunks": 728,
+   "ok": true,
+   "seconds": 10.89,
+   "round": 3
+  },
+  {
+   "kind": "schema",
+   "index": 12,
+   "thinking": false,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 0.66,
+   "round": 4
+  },
+  {
+   "kind": "schema",
+   "index": 13,
+   "thinking": false,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 0.49,
+   "round": 4
+  },
+  {
+   "kind": "schema",
+   "index": 14,
+   "thinking": false,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 0.83,
+   "round": 4
+  },
+  {
+   "kind": "tool_required",
+   "index": 4,
+   "thinking": false,
+   "tool_calls": 1,
+   "ok": true,
+   "seconds": 0.68,
+   "round": 4
+  },
+  {
+   "kind": "plain",
+   "index": 8,
+   "thinking": false,
+   "stream_chunks": 749,
+   "ok": true,
+   "seconds": 10.96,
+   "round": 4
+  },
+  {
+   "kind": "plain",
+   "index": 9,
+   "thinking": false,
+   "stream_chunks": 790,
+   "ok": true,
+   "seconds": 11.26,
+   "round": 4
+  },
+  {
+   "kind": "tool_required",
+   "index": 5,
+   "thinking": true,
+   "tool_calls": 1,
+   "ok": true,
+   "seconds": 0.81,
+   "round": 5
+  },
+  {
+   "kind": "schema",
+   "index": 16,
+   "thinking": true,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 1.26,
+   "round": 5
+  },
+  {
+   "kind": "schema",
+   "index": 17,
+   "thinking": true,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 1.47,
+   "round": 5
+  },
+  {
+   "kind": "schema",
+   "index": 15,
+   "thinking": true,
+   "keys": [
+    "city",
+    "country",
+    "population_millions"
+   ],
+   "ok": true,
+   "seconds": 2.0,
+   "round": 5
+  },
+  {
+   "kind": "plain",
+   "index": 11,
+   "thinking": true,
+   "stream_chunks": 704,
+   "ok": true,
+   "seconds": 10.72,
+   "round": 5
+  },
+  {
+   "kind": "plain",
+   "index": 10,
+   "thinking": true,
+   "stream_chunks": 772,
+   "ok": true,
+   "seconds": 11.55,
+   "round": 5
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+{"label": "jovian-r38-8", "context_in": "system message", "step": "first request, 16 tokens", "shared_context_tokens": 56348, "seconds": 5.1, "prompt_tokens": 56386, "completion_tokens": 16, "cached_tokens": null}
+{"label": "jovian-r38-8", "context_in": "system message", "step": "the same request again", "shared_context_tokens": 56348, "seconds": 0.43, "prompt_tokens": 56386, "completion_tokens": 16, "cached_tokens": null}
+{"label": "jovian-r38-8", "context_in": "system message", "step": "same context, other question", "shared_context_tokens": 56348, "seconds": 0.42, "prompt_tokens": 56387, "completion_tokens": 16, "cached_tokens": null}
+{"label": "jovian-r38-8", "context_in": "system message", "step": "same context, third question", "shared_context_tokens": 56348, "seconds": 0.28, "prompt_tokens": 56386, "completion_tokens": 16, "cached_tokens": null}

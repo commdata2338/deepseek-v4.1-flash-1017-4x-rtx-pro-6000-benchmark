@@ -1,0 +1,26 @@
+{
+ "unit": "kk-ds41-1017.service",
+ "since": "2026-10-17 19:44:00",
+ "until": "2026-10-17 19:53:00",
+ "spec_lines": 0,
+ "accepted_tokens": 0,
+ "drafted_tokens": 0,
+ "accepted_per_drafted": null,
+ "spec": [],
+ "start_milestones": [
+  "(APIServer pid=75) INFO 10-18 00:44:30 [model.py:2061] Using max model len 1048576",
+  "(APIServer pid=75) INFO 10-18 00:44:34 [model.py:2061] Using max model len 1048576",
+  "(APIServer pid=75) INFO 10-18 00:44:36 [engram.py:146] Engram mapped-host RAM: 188.83 GiB packed tables across TP4, 262.83 GiB available, 4 GiB reserve",
+  "(APIServer pid=75) INFO 10-18 00:44:36 [vllm.py:1497] Resolved Engram configuration: EngramConfig(cpu_offload=False, embedding_across_dp=False, dp_shared_memory=False, table_memory='ram', disk_resident_scales=False, projection_tp=False)",
+  "(EngineCore pid=491) INFO 10-18 00:44:46 [core.py:124] Initializing a V1 LLM engine (v0.1.dev21836+g6d66eed35) with config: model='/models/DeepSeek-V4.1-Flash-1017', speculative_config=SpeculativeConfig(method='dspark', model='/models/DeepSeek-V4.1-Flash-1017', num_spec_toke",
+  " pid=527) INFO 10-18 00:45:02 [b12x_pcie_all_reduce.py:326] Using B12X PCIe all-reduce (algorithm=oneshot, one-shot max=98304, fused max=98304, two-shot bf16 max=off, DMA min=6291456).",
+  "er_TP0 pid=527) INFO 10-18 00:46:41 [default_loader.py:575] Loading weights took 54.64 seconds",
+  "(Worker_TP0 pid=527) INFO 10-18 00:46:43 [vllm.py:1497] Resolved Engram configuration: EngramConfig(cpu_offload=False, embedding_across_dp=False, dp_shared_memory=False, table_memory='ram', disk_resident_scales=False, projection_tp=False)",
+  "er_TP0 pid=527) INFO 10-18 00:46:46 [default_loader.py:575] Loading weights took 3.01 seconds",
+  "rker_TP3 pid=530) INFO 10-18 00:46:47 [model_runner.py:456] Model loading took 74.29 GiB memory and 104.254792 seconds",
+  "rker_TP1 pid=528) INFO 10-18 00:46:47 [model_runner.py:456] Model loading took 74.29 GiB memory and 104.274123 seconds",
+  "rker_TP0 pid=527) INFO 10-18 00:46:47 [model_runner.py:456] Model loading took 74.29 GiB memory and 104.281591 seconds",
+  "rker_TP2 pid=529) INFO 10-18 00:46:47 [model_runner.py:456] Model loading took 74.29 GiB memory and 104.283996 seconds",
+  "b12x ready comm.pcie: 1590/1590 ready, candidates 0/1 prepared, 98743 measured, 0 cached, 1068 compilations, 5:14"
+ ]
+}

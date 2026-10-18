@@ -1,0 +1,306 @@
+{
+  "scope": {
+    "base_url": "http://127.0.0.1:8010",
+    "model": "deepseek-v4.1-flash",
+    "label": "deepseek",
+    "part": "all",
+    "sizes": "5000,56000,100000",
+    "concurrency": "1,2,3",
+    "output_tokens": 1700,
+    "talk_size": 6000,
+    "talk_output": 300,
+    "talk_bg_size": 56000,
+    "talk_bg_count": 2,
+    "talk_bg_output": 4000,
+    "timeout": 2400
+  },
+  "authenticated": true,
+  "waves": [
+    {
+      "input_target": 5000,
+      "input_actual": [
+        5001
+      ],
+      "concurrency": 1,
+      "effective_prefill_tps": 7293.863558415915,
+      "median_ttft_s": 0.6854030420072377,
+      "shared_decode_s": 10.847327037947252,
+      "aggregate_decode_tps": 156.62844810121246,
+      "median_decode_tps": 156.62844810121246,
+      "status": "measured",
+      "output_tokens": 1700,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "input_target": 5000,
+      "input_actual": [
+        5001,
+        5001
+      ],
+      "concurrency": 2,
+      "effective_prefill_tps": 7591.149860618807,
+      "median_ttft_s": 1.1873120435047895,
+      "shared_decode_s": 11.460213450947776,
+      "aggregate_decode_tps": 291.70486346600546,
+      "median_decode_tps": 145.85243173300273,
+      "status": "measured",
+      "output_tokens": 1700,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "input_target": 5000,
+      "input_actual": [
+        5001,
+        5001,
+        5001
+      ],
+      "concurrency": 3,
+      "effective_prefill_tps": 7532.360858017074,
+      "median_ttft_s": 1.578965560067445,
+      "shared_decode_s": 12.25632071797736,
+      "aggregate_decode_tps": 406.8105033092534,
+      "median_decode_tps": 138.45917050056218,
+      "status": "measured",
+      "output_tokens": 1700,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "input_target": 56000,
+      "input_actual": [
+        55981
+      ],
+      "concurrency": 1,
+      "effective_prefill_tps": 7851.028207685401,
+      "median_ttft_s": 7.130246035987511,
+      "shared_decode_s": 10.692041469970718,
+      "aggregate_decode_tps": 158.90323702650707,
+      "median_decode_tps": 158.90323702650707,
+      "status": "measured",
+      "output_tokens": 1700,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "input_target": 56000,
+      "input_actual": [
+        55983,
+        55983
+      ],
+      "concurrency": 2,
+      "effective_prefill_tps": 7987.46077060643,
+      "median_ttft_s": 10.754258545988705,
+      "shared_decode_s": 10.961561418022029,
+      "aggregate_decode_tps": 298.9537598733194,
+      "median_decode_tps": 149.4768799366597,
+      "status": "measured",
+      "output_tokens": 1700,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "input_target": 56000,
+      "input_actual": [
+        55982,
+        55994,
+        55980
+      ],
+      "concurrency": 3,
+      "effective_prefill_tps": 7881.926106150156,
+      "median_ttft_s": 14.487092395080253,
+      "shared_decode_s": 12.217762839980423,
+      "aggregate_decode_tps": 409.3220719291694,
+      "median_decode_tps": 137.25917109082525,
+      "status": "measured",
+      "output_tokens": 1700,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "input_target": 100000,
+      "input_actual": [
+        99992
+      ],
+      "concurrency": 1,
+      "effective_prefill_tps": 7810.1877290809425,
+      "median_ttft_s": 12.802596352994442,
+      "shared_decode_s": 10.799757139058784,
+      "aggregate_decode_tps": 157.31835245214324,
+      "median_decode_tps": 157.31835245214324,
+      "status": "measured",
+      "output_tokens": 1700,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "input_target": 100000,
+      "input_actual": [
+        99990,
+        99992
+      ],
+      "concurrency": 2,
+      "effective_prefill_tps": 7765.647289177767,
+      "median_ttft_s": 19.519575634913053,
+      "shared_decode_s": 11.315800909069367,
+      "aggregate_decode_tps": 287.8276161071008,
+      "median_decode_tps": 143.9138080535504,
+      "status": "measured",
+      "output_tokens": 1700,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "input_target": 100000,
+      "input_actual": [
+        99992,
+        99993,
+        99981
+      ],
+      "concurrency": 3,
+      "effective_prefill_tps": 7863.522921082419,
+      "median_ttft_s": 25.758826881996356,
+      "shared_decode_s": 13.002560036955401,
+      "aggregate_decode_tps": 387.46216019623677,
+      "median_decode_tps": 129.35914121676663,
+      "status": "measured",
+      "output_tokens": 1700,
+      "garbage_checks": [
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        },
+        {
+          "empty": false,
+          "repeated_block_six_times": false,
+          "replacement_character": false,
+          "non_ascii_or_control_fraction": 0.0
+        }
+      ]
+    }
+  ],
+  "talk": {
+    "label": "talk-6000-o300-under-2x56000-o4000",
+    "talk_prompt_tokens": 5996,
+    "talk_output_tokens": 300,
+    "alone_ttft_s": 0.7896030680276453,
+    "alone_elapsed_s": 4.307271979050711,
+    "under_load_ttft_s": 0.815227483981289,
+    "under_load_elapsed_s": 4.838028550031595,
+    "talk_sent_at_s": 14.18786441301927,
+    "background_ttft_s": [
+      7.594110309029929,
+      14.18662069097627
+    ],
+    "background_end_s": [
+      42.47194517997559,
+      41.842633450054564
+    ],
+    "background_prompt_tokens": [
+      55984,
+      55984
+    ],
+    "background_output_tokens": 4000,
+    "status": "overlapped"
+  },
+  "errors": []
+}

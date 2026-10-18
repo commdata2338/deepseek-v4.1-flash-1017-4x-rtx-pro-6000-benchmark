@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8010/v1/models",
+  "request": null,
+  "started_at": 1792285239.7544947,
+  "status": 200,
+  "raw_response": "{\"object\":\"list\",\"data\":[{\"id\":\"deepseek-v4.1-flash\",\"object\":\"model\",\"created\":1792285239,\"owned_by\":\"vllm\",\"root\":\"/models/DeepSeek-V4.1-Flash-1017\",\"parent\":null,\"max_model_len\":1048576,\"permission\":[{\"id\":\"modelperm-a8c1a393c0df8728\",\"object\":\"model_permission\",\"created\":1792285239,\"allow_create_engine\":false,\"allow_sampling\":true,\"allow_logprobs\":true,\"allow_search_indices\":false,\"allow_view\":true,\"allow_fine_tuning\":false,\"organization\":\"*\",\"group\":null,\"is_blocking\":false}]}]}",
+  "response": {
+    "object": "list",
+    "data": [
+      {
+        "id": "deepseek-v4.1-flash",
+        "object": "model",
+        "created": 1792285239,
+        "owned_by": "vllm",
+        "root": "/models/DeepSeek-V4.1-Flash-1017",
+        "parent": null,
+        "max_model_len": 1048576,
+        "permission": [
+          {
+            "id": "modelperm-a8c1a393c0df8728",
+            "object": "model_permission",
+            "created": 1792285239,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  },
+  "elapsed_s": 0.013972152024507523
+}
